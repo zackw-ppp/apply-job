@@ -23,7 +23,7 @@ Rule: unless the field is **Legal name**, use **Zack**. Legal name → **子肖 
 | Email | zackw294@outlook.com |
 | Phone | +1 206 579 2808 |
 | Phone (US national) | (206) 579-2808 |
-| LinkedIn profile URL | UNKNOWN — use the logged-in LinkedIn session; do not invent a `/in/` slug |
+| LinkedIn profile URL | https://www.linkedin.com/in/zack-wang-6239a1210 |
 | GitHub | DO NOT FILL |
 | Portfolio | https://zackw.framer.website |
 | Portfolio (AI case) | https://zackw.framer.website/copilot |

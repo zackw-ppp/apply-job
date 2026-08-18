@@ -99,7 +99,7 @@ def answer(question: str, jd_location: str = "") -> str | None:
     if re.search(r"portfolio|personal (site|website)|website url|portfolio url", q):
         return PORTFOLIO
     if re.search(r"linkedin(.+url| profile)", q):
-        return ""  # session fills; do not invent
+        return "https://www.linkedin.com/in/zack-wang-6239a1210"
 
     if re.search(r"street|address line 1", q):
         return ADDRESS["street"]

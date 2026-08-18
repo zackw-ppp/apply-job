@@ -33,3 +33,4 @@ Guest inventory: 30 unique jobs (`start=0,25,50`). Apply list is in `runs/2026-0
 | CivilGrid | Senior UX Designer | 4454290793 | Senior |
 | icreatives | Design Engineer 5WR5Y635 | 4440197273 | 5+ years / senior-comp Design Engineer, not a mid product-designer seat |
 | LodgeLink | Senior Product Designer | 4438764462 | Senior IC + mentorship |
+| Posted.Careers / Secureframe | Product Designer (LinkedIn) / Senior on careers | 4455377812 | Official Secureframe board is **Senior Product Designer** — skip as overly senior |

@@ -13,28 +13,22 @@ Currently selected card in the URL = **State Farm Product Designer** → skip (n
 | Read profile / resume | 1 | Playbook paths were missing; rebuilt from Zack’s instructions + CV |
 | Guest list pages 1–3 | 0.1 | 30 jobs, 10 per page |
 | Fetch 30 JDs + gate | 0.5 | |
-| LinkedIn Easy Apply | blocked | Chrome is on the login wall. Need Zack to sign in on this machine |
-| Submit + dismiss X | pending | auto-submit ON once logged in |
+| LinkedIn Easy Apply | skipped | Zack skipped cloud-desktop LinkedIn login |
+| Company ATS apply | ~20 | OpenAI submitted; PermitFlow already applied; Secureframe is Senior |
 
-**Card:** LinkedIn session. Everything else (gate, PII, answer engine, CV path) is ready.
+**Card this round:** LinkedIn session (skipped). Workaround: Ashby career pages.
 
-## Apply (3)
+## Outcomes
 
-| Company | Role | Location | Job ID | Why it passes |
+| Company | Role | Location | Job ID | Result |
 | --- | --- | --- | --- | --- |
-| PermitFlow | Product Designer | New York, NY (hybrid 3 days) | 4378051109 | Product designer, **4+ years** software design (under 5+ knockout), B2B complex workflows, portfolio required |
-| OpenAI | Product Designer, People Innovation Labs | San Francisco, CA | 4417167197 | Product designer, **4+ years** shipping software, AI + internal tools match Copilot/Sony stories |
-| Posted.Careers / Secureframe | Product Designer | New York, NY (hybrid) | 4455377812 | Product designer, B2B SaaS, no 5+ year floor in JD |
+| PermitFlow | Product Designer | New York, NY | 4378051109 | Already applied (Ashby 180-day lock) |
+| OpenAI | Product Designer, People Innovation Labs | San Francisco, CA | 4417167197 | **Submitted** on Ashby |
+| Posted.Careers / Secureframe | Product Designer | New York, NY | 4455377812 | Skip — official role is Senior |
 
-LinkedIn guest pages hide the real Apply button behind login, so Easy Apply vs company ATS is unknown until session is live.
+## Notes for next run
 
-## Still needed from Zack (preferences)
-
-Answered already: name, legal name, country, address, start date, salary, birthday skip, GitHub skip, cover letter if required, years = 3+.
-
-Still open if a form demands it:
-
-1. LinkedIn `/in/` URL (session usually fills this).
-2. Exact work-auth status (F-1 / OPT / STEM OPT / other) — we only answer “needs sponsorship = Yes”.
-3. If DOB becomes required (policy is leave blank, then STOP).
-4. LinkedIn login + 2FA on this cloud desktop.
+- LinkedIn URL on file: https://www.linkedin.com/in/zack-wang-6239a1210
+- OpenAI location autocomplete used District of Columbia instead of Shoreline, WA
+- Exact work-auth type (F-1 / OPT) still not stored; we only answer sponsorship = Yes
+- DOB still never filled
