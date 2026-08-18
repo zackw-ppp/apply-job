@@ -3,17 +3,17 @@
 Inventory: 75 jobs (3 pages × 25). LinkedIn login still skipped → company ATS.
 
 ## Already done
+- Babylist Senior PD, AI Registry — **submitted** (US Greenhouse `6121161004`)
 - OpenAI People Innovation Labs — submitted
 - PermitFlow — already applied (180-day lock)
 
 ## APPLY now (JD not 5+, not no-sponsor, not physical)
 
-Direct ATS URLs (submit these). **Staff titles removed.**
+Direct ATS URLs (submit these). **Staff titles removed.** Babylist US is done.
 
-1. Babylist — Senior Product Designer, AI Registry — https://job-boards.greenhouse.io/babylist/jobs/6145263004
-2. IMC — Lead UX Designer — https://job-boards.eu.greenhouse.io/imc/jobs/4780703101
-3. Wispr Flow — Design Engineer, Mobile — https://jobs.ashbyhq.com/wispr-flow/2065defc-4def-4125-8ee6-fb61793de01e/application
-   They sponsor visas. Yes need sponsorship.
+1. IMC — Lead UX Designer — https://job-boards.eu.greenhouse.io/imc/jobs/4780703101
+2. Wispr Flow — Design Engineer, Mobile — https://jobs.ashbyhq.com/wispr-flow/2065defc-4def-4125-8ee6-fb61793de01e/application
+   Ashby flagged Playwright as spam; retry in desktop Chrome. They sponsor visas.
 
 Removed (Staff in title): Affirm Staff PD, Valon Staff PD, Babylist Staff PD AI Builder.
 
