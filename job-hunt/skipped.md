@@ -48,3 +48,4 @@ Guest inventory: 30 unique jobs (`start=0,25,50`). Apply list is in `runs/2026-0
 | Google | UX Designer, Search Ads 360 | 4454258103 | **Zack: do not apply to Google** |
 | Google | Staff UX Designer, Ads in Search AI Experiences | 4454289340 | Staff + Zack: do not apply to Google |
 | Checkr | Staff Product Designer, Growth | 4455366504 / 4455354663 | **Staff in title** |
+| Hexaware Technologies | Salesforce UX Designer | 4454264141 | No Ashby/Greenhouse/Workday apply URL. Official board is Oracle HCM `https://jobs.hexaware.com/` (307 reqs); Plano/Salesforce UX Designer is not listed. Ashby boards 404 (not spam). |
