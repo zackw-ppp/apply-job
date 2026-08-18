@@ -584,7 +584,7 @@ def main() -> int:
                     code_path = Path(args.wait_code_file) if args.wait_code_file else None
                     Path("/tmp/ats-waiting-code").write_text(args.company)
                     result.setdefault("log", []).append("waiting-code")
-                    for _ in range(180):
+                    for _ in range(600):
                         if not code and code_path and code_path.exists():
                             code = code_path.read_text().strip().split()[0]
                         if code and len(code) >= 6:
