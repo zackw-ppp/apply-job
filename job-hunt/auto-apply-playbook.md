@@ -93,6 +93,6 @@ Rules that saved retries:
 3. Greenhouse: fill React-Select via `aria-controls` listbox; OTP is **8 boxes**; keep the session open and drop the code in `/tmp/gh-code.txt`.
 4. Ashby: one Playwright submit; if spam, **one** desktop Chrome retry, not a third Playwright.
 5. Never start a Google application.
-6. Log seconds + bottleneck in `runs/timing.md` after each role.
+7. Parallelize: one Playwright filler per Ashby/Greenhouse URL; **only one** desktop-Chrome agent (iCIMS/Workday). If a filler has no ATS URL in 3 minutes, skip — don’t sit on LinkedIn guest pages.
 
 Card left: finding company-board URLs without LinkedIn login; iCIMS/Workday still need the desktop Chrome session.
