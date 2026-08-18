@@ -3,6 +3,7 @@
 Inventory: 75 jobs (3 pages × 25). LinkedIn login still skipped → company ATS.
 
 ## Already done
+- Wispr Flow Design Engineer, Mobile — **submitted** (desktop Chrome; Playwright was spam-flagged)
 - Babylist Senior PD, AI Registry — **submitted** (US Greenhouse `6121161004`)
 - IMC Lead UX Designer — **submitted**
 - OpenAI People Innovation Labs — submitted
@@ -10,10 +11,7 @@ Inventory: 75 jobs (3 pages × 25). LinkedIn login still skipped → company ATS
 
 ## APPLY now (JD not 5+, not no-sponsor, not physical)
 
-Direct ATS URLs still open. **Staff titles removed.**
-
-1. Wispr Flow — Design Engineer, Mobile — https://jobs.ashbyhq.com/wispr-flow/2065defc-4def-4125-8ee6-fb61793de01e/application
-   Ashby flagged Playwright as spam; retry in desktop Chrome. They sponsor visas.
+Direct ATS URLs from the LinkedIn list are exhausted for Greenhouse/Ashby boards we could open. Remaining roles still need a company apply URL or LinkedIn Easy Apply.
 
 Removed (Staff in title): Affirm Staff PD, Valon Staff PD, Babylist Staff PD AI Builder.
 
