@@ -9,7 +9,7 @@ Card so far: **computerUse click-by-click** (2–8 min/field-heavy form) vs **Pl
 | 2026-08-18 07:12 | Outlook | — | — | Microsoft 2FA until Zack logged in | inbox readable |
 | 2026-08-18 08:30 | Wispr Flow | Design Engineer, Mobile | 7–11 | Ashby spam flag on Playwright Chrome | blocked (retry in real desktop Chrome) |
 | 2026-08-18 08:52 | Babylist | Senior PD, AI Registry | 108 | Greenhouse 8-box OTP (Outlook read-only) | **submitted** |
-| 2026-08-18 08:50 | IMC | Lead UX Designer | — | queued immediately after Babylist | starting |
+| 2026-08-18 08:55 | IMC | Lead UX Designer | 124 | Greenhouse 8-box OTP | **submitted** |
 
 Optimizations in flight:
 1. `helpers/ats_autofill.py` fills name/email/phone/links/resume/sponsorship/EEO from `profile.json`
