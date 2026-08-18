@@ -1,0 +1,18 @@
+{
+  "name": "apply-job",
+  "install": "npm install && npm --workspace server run seed",
+  "terminals": [
+    {
+      "name": "api",
+      "command": "npm run dev:server"
+    },
+    {
+      "name": "web",
+      "command": "npm run dev:web"
+    }
+  ],
+  "ports": [
+    { "name": "api", "port": 4000 },
+    { "name": "web", "port": 5173 }
+  ]
+}

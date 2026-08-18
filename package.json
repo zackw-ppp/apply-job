@@ -1,0 +1,25 @@
+{
+  "name": "apply-job",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Track your job applications from applied to offer.",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,magenta \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:server": "npm --workspace server run dev",
+    "dev:web": "npm --workspace web run dev",
+    "build": "npm --workspace server run build && npm --workspace web run build",
+    "lint": "npm --workspace server run lint && npm --workspace web run lint",
+    "typecheck": "npm --workspace server run typecheck && npm --workspace web run typecheck",
+    "test": "npm --workspace server run test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
