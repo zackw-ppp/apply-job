@@ -11,8 +11,10 @@ Card so far: **computerUse click-by-click** (2–8 min/field-heavy form) vs **Pl
 | 2026-08-18 08:52 | Babylist | Senior PD, AI Registry | 108 | Greenhouse 8-box OTP (Outlook read-only) | **submitted** |
 | 2026-08-18 09:01 | Wispr Flow | Design Engineer, Mobile | — | desktop Chrome (Ashby spam on Playwright) | **submitted** |
 
-Optimizations in flight:
-1. `helpers/ats_autofill.py` fills name/email/phone/links/resume/sponsorship/EEO from `profile.json`
-2. Enter Greenhouse email codes immediately instead of waiting on computerUse
-3. Staff-in-title skip before opening the form
-4. After each submit, log seconds + bottleneck here
+Optimizations that landed this run:
+1. Playwright Ashby/Greenhouse fill from `profile.json` (~30s structured fields)
+2. Greenhouse 8-box OTP via `/tmp/gh-code.txt` (Outlook read-only, don’t re-fill the form)
+3. Ashby spam → desktop Chrome once
+4. Gate: Google hard-skip; fix US-Person/`25+ years` false positives; skip aggregators
+5. Do not harvest apply URLs from LinkedIn guest (login wall)
+6. iCIMS/Workday (Allegis, Target) go through desktop Chrome, not Playwright guess-fills

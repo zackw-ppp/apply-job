@@ -75,6 +75,24 @@ After submit: click the job card **X** (dismiss) so it leaves the list. Log the 
 
 Append `applied.md` (America/Los_Angeles date) and `skipped.md`. Record elapsed minutes and the slowest step in `job-hunt/runs/`.
 
-## Speed notes
+## Speed notes (2026-08-18)
 
-Bottlenecks so far: LinkedIn login wall, Easy Apply field variance, computerUse round-trips. Mitigation: guest inventory + gate **before** login; `answer_engine.py` for every question; clipboard paste of long answers; PDF already on disk.
+What actually moved the needle:
+
+| Path | Typical | Use when |
+| --- | --- | --- |
+| Playwright `ats_autofill.py --submit` | 30–125s including Greenhouse OTP | Ashby/Greenhouse URLs we already have |
+| Desktop Chrome for Ashby | ~few minutes | Playwright got “possible spam” |
+| computerUse click-by-click | 10–20 min/role, 100-image crash | iCIMS / Workday / unknown ATS only |
+| LinkedIn guest “apply URL harvest” | wasted | Guest pages hide offsite apply behind login |
+
+Rules that saved retries:
+
+1. Gate **before** opening a form. Skip Google (Zack), Staff-in-title, aggregators (Sundayy/Ladders/Underdog), 5+ **required** years (not “nice to have”), Public Trust.
+2. Don’t treat `curious person` as US Person; don’t treat `25+ Years of Proven Industry` as YOE.
+3. Greenhouse: fill React-Select via `aria-controls` listbox; OTP is **8 boxes**; keep the session open and drop the code in `/tmp/gh-code.txt`.
+4. Ashby: one Playwright submit; if spam, **one** desktop Chrome retry, not a third Playwright.
+5. Never start a Google application.
+6. Log seconds + bottleneck in `runs/timing.md` after each role.
+
+Card left: finding company-board URLs without LinkedIn login; iCIMS/Workday still need the desktop Chrome session.

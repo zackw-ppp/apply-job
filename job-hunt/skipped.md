@@ -37,6 +37,10 @@ Guest inventory: 30 unique jobs (`start=0,25,50`). Apply list is in `runs/2026-0
 | Affirm | Staff Product Designer | 4368287093 / 4368285213 | **Staff in title** |
 | Valon | Staff Product Designer, Product Infrastructure | 4366517577 / 4366525520 | **Staff in title** |
 | Babylist | Staff Product Designer, AI Builder | 4454290088 | **Staff in title** |
+| Underdog.io | Product Designer | 4454530471 | Recruiter marketplace / aggregator |
+| Sundayy | Product Designer II | 4455266562 | Job board aggregator, not a hiring company |
+| Ladders | Product Designer | 4452231803 | Aggregator |
+| Booz Allen Hamilton | User Experience Designer | 4455364567 | Public Trust / US government client |
 | Google | UX Designer, Search Ads 360 | 4454258103 | **Zack: do not apply to Google** |
 | Google | Staff UX Designer, Ads in Search AI Experiences | 4454289340 | Staff + Zack: do not apply to Google |
 | Checkr | Staff Product Designer, Growth | 4455366504 / 4455354663 | **Staff in title** |
