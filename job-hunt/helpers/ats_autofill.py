@@ -38,7 +38,7 @@ SPAM_RE = re.compile(r"possible spam|flagged as possible spam", re.I)
 
 
 def n(s: str) -> str:
-    return re.sub(r"\s+", " ", s or "").strip().lower()
+    return re.sub(r"[\s\-]+", " ", s or "").strip().lower()
 
 
 def body_text(page) -> str:
@@ -73,7 +73,7 @@ def pick_combo(page, el, wanted: str, log: list, key: str = "") -> bool:
     want = n(wanted)
     try:
         box.click(timeout=2500)
-        page.wait_for_timeout(180)
+        page.wait_for_timeout(120)
         controls = box.get_attribute("aria-controls") or box.get_attribute("aria-owns") or ""
         opts = (
             page.locator(f'[id="{controls}"] [role="option"]')
@@ -87,7 +87,7 @@ def pick_combo(page, el, wanted: str, log: list, key: str = "") -> bool:
                 t = n(opts.nth(i).inner_text())
                 if not t:
                     continue
-                if t == want or t.startswith(want) or want in t:
+                if t == want or t.startswith(want) or want in t or t in want:
                     opts.nth(i).click(timeout=2000)
                     log.append(f"combo:{key}={wanted}")
                     return True
@@ -95,16 +95,19 @@ def pick_combo(page, el, wanted: str, log: list, key: str = "") -> bool:
 
         if click_match():
             return True
-        # filter by typing
         box.fill("")
-        box.press_sequentially(wanted[:48], delay=15)
-        page.wait_for_timeout(220)
-        if click_match():
-            return True
-        if opts.count():
+        box.press_sequentially(wanted[:64], delay=25)
+        for _ in range(8):
+            page.wait_for_timeout(250)
+            if click_match():
+                return True
+            if opts.count():
+                break
+        if opts.count() == 1:
             opts.first.click(timeout=2000)
-            log.append(f"combo-first:{key}")
+            log.append(f"combo-only:{key}")
             return True
+        page.keyboard.press("ArrowDown")
         page.keyboard.press("Enter")
         log.append(f"combo-enter:{key}")
         return True
@@ -409,6 +412,17 @@ def fill_greenhouse(page) -> dict:
         set_field(page, fid, val, log, n(text)[:40])
 
     accept_required_checks(page, log)
+    loc = by_id(page, "candidate-location")
+    if loc.count() and not page.locator(".select__single-value").filter(
+        has_text=re.compile("Shoreline", re.I)
+    ).count():
+        pick_combo(
+            page,
+            loc,
+            "Shoreline, Washington, United States",
+            log,
+            "location-retry",
+        )
     return {"log": log}
 
 
@@ -562,6 +576,15 @@ def main() -> int:
             page.screenshot(path=shot, full_page=True)
         except Exception:
             shot = ""
+        errors = []
+        try:
+            errors = [
+                t.strip()
+                for t in page.locator(".helper-text--error").all_inner_texts()
+                if t.strip()
+            ][:12]
+        except Exception:
+            pass
         elapsed = round(time.time() - t0, 1)
         out = {
             "company": args.company,
@@ -572,6 +595,7 @@ def main() -> int:
             "need_code": need_code,
             "spam": spam,
             "log": result.get("log"),
+            "errors": errors,
             "final_url": page.url,
             "screenshot": shot,
             "confirm_head": confirm[:400],
