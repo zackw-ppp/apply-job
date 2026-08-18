@@ -37,9 +37,14 @@ YEARS_OF = re.compile(
 WORD_YEARS = {"five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
 
 
+SKIP_COMPANIES = re.compile(r"\bgoogle\b", re.I)
+
+
 def gate(title: str, company: str, jd: str) -> tuple[bool, str]:
     t = title or ""
     text = f"{t}\n{jd or ''}"
+    if SKIP_COMPANIES.search(company or "") or SKIP_COMPANIES.search(t):
+        return False, "Zack: do not apply to Google"
     # Senior/Lead titles are OK. Staff in the title is a skip.
     if re.search(r"\bstaff\b", t, re.I):
         return False, f"Staff title: {t}"

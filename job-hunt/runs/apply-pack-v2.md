@@ -11,7 +11,8 @@ Inventory: 75 jobs (3 pages × 25). LinkedIn login still skipped → company ATS
 
 ## APPLY now (JD not 5+, not no-sponsor, not physical)
 
-Direct ATS URLs from the LinkedIn list are exhausted for Greenhouse/Ashby boards we could open. Remaining roles still need a company apply URL or LinkedIn Easy Apply.
+1. Allegis Group UX Designer — https://careers-allegisgroup.icims.com/jobs/2368/ux-designer/job (3–5 years; 4+ is OK)
+2. Target Senior UX Product Designer - Stores — https://corporate.target.com/jobs/w28/85/senior-ux-product-designer-stores (4+ years)
 
 Removed (Staff in title): Affirm Staff PD, Valon Staff PD, Babylist Staff PD AI Builder.
 
@@ -21,7 +22,9 @@ Why text:
 At Trip.com I owned the charter-service redesign and raised order conversion 49.7% in a year through behavior data, usability studies, and A/B tests. At Ansys I collapsed seven Discovery variation-panel pop-ups into one flow for mechanical engineers, then prototyped an AI Copilot that helped the team argue the roadmap with working artifacts instead of decks. Sony work was similar: 11 interviews on an AI sports-commentator experience, mapping what people actually needed before pushing UI. I can relocate to the role's city. I will need employment sponsorship.
 
 ## Still matching but need URL / LinkedIn Easy Apply
-Crossing Hurdles PD; Stealth Lead 33301; Underdog.io; Biorce junior/mid; Google UX Search Ads 360 (4 years); Evlo AI UX; Sundayy PD II; MaximaTek 0–3; Allegis UX; Target Senior Stores (4+); Primis Senior PD; Hexaware Salesforce UX; HeartCentrix UX; IDR Senior UX/UI; Trane Senior (careers page closed).
+Crossing Hurdles PD; Stealth Lead 33301; Underdog.io; Biorce junior/mid; Evlo AI UX; Sundayy PD II; MaximaTek 0–3; Allegis UX; Target Senior Stores (4+); Primis Senior PD; Hexaware Salesforce UX; HeartCentrix UX; IDR Senior UX/UI; Trane Senior (careers page closed).
+
+**Do not apply:** any Google role (Zack 2026-08-18).
 
 ## Staff titles skipped this round (do not apply)
 Affirm Staff Product Designer; Valon Staff Product Designer, Product Infrastructure; Babylist Staff Product Designer (AI Builder); Google Staff UX Designer; Checkr/Brex/other Staff listings.

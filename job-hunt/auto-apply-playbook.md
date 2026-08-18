@@ -29,6 +29,7 @@ Scope: **pages 1–3**, **25 jobs per page** (`start=0, 25, 50` → 75 cards). T
 
 Stop if any of these are true:
 
+- **Google** — Zack: do not apply (any Google role, including Search Ads 360)
 - Already in `applied.md`
 - JD minimum years is **5+** (Senior/Lead/Principal title alone is not a skip)
 - **Staff** appears in the job title
