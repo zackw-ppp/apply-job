@@ -531,19 +531,33 @@ def new_page(browser):
     return context, context.new_page()
 
 
+def attach_cdp(p, cdp: str):
+    """Reuse the already-running desktop Chrome (Ashby spam bypass)."""
+    browser = p.chromium.connect_over_cdp(cdp)
+    context = browser.contexts[0] if browser.contexts else browser.new_context()
+    page = context.new_page()
+    return browser, context, page
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--url", required=True)
     ap.add_argument("--company", default="")
     ap.add_argument("--submit", action="store_true")
     ap.add_argument("--headed", action="store_true")
+    ap.add_argument("--cdp", default="", help="Connect to existing Chrome, e.g. http://127.0.0.1:9222")
     ap.add_argument("--code", default="")
     ap.add_argument("--wait-code-file", default="/tmp/gh-code.txt")
     args = ap.parse_args()
     t0 = time.time()
     with sync_playwright() as p:
-        browser = launch_browser(p, args.headed)
-        context, page = new_page(browser)
+        close_browser = True
+        if args.cdp:
+            browser, context, page = attach_cdp(p, args.cdp)
+            close_browser = False
+        else:
+            browser = launch_browser(p, args.headed)
+            context, page = new_page(browser)
         page.goto(args.url, wait_until="domcontentloaded", timeout=60000)
         page.wait_for_timeout(900)
         clicked_apply = click_apply_if_needed(page)
@@ -651,8 +665,14 @@ def main() -> int:
         print(json.dumps(out, indent=2))
         Path("/tmp/ats-last-fill.json").write_text(json.dumps(out, indent=2))
         Path(f"/tmp/ats-{safe}.json").write_text(json.dumps(out, indent=2))
-        context.close()
-        browser.close()
+        if close_browser:
+            context.close()
+            browser.close()
+        else:
+            try:
+                page.close()
+            except Exception:
+                pass
     return 0 if submitted or already else (2 if need_code else 1)
 
 
