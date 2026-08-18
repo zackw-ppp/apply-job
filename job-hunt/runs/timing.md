@@ -14,6 +14,15 @@ Card so far: **computerUse click-by-click** (2–8 min/field-heavy form) vs **Pl
 | 2026-08-18 09:25 | Evlo AI | UX Designer | ~30 | URL hunt; no ATS; multi-city mill | skipped |
 | 2026-08-18 09:28 | Biorce | Junior/Mid PD (Austin) | ~180 | URL hunt; Revolut People not Ashby/GH/Lever/Workday | skipped |
 | 2026-08-18 09:26 | Hexaware | Salesforce UX Designer | ~50 | Oracle HCM careers; job not listed; no GH/WD URL | skipped |
+| 2026-08-18 09:29 | Allegis | UX Designer | ~1500 | iCIMS existing account, unknown password + CAPTCHA | blocked |
+| 2026-08-18 09:29 | Target | Senior UX Stores | ~60 | Workday R0000442885 page doesn’t exist | skipped |
+| 2026-08-18 09:29 | Primis | Senior PD | ~90 | recruiter; unnamed client; no ATS | skipped |
+| 2026-08-18 09:30 | HeartCentrix | UX Designer | ~60 | Easy Apply only; Matador TEST board | skipped |
+| 2026-08-18 09:34 | IDR, Inc. | Senior UX/UI Product Designer | 15 | Gravity Forms popup on jobs.idr-inc.com | **submitted** |
+| 2026-08-18 09:32 | Crossing Hurdles / Basis | Product Designer | ~40 | client is Basis; Ashby board has no PD role | skipped |
+| 2026-08-18 09:32 | Deloitte | UX Designer | ~10 | no-sponsor knockout | skipped |
+| 2026-08-18 09:32 | Photon | Senior UX | ~5 | over six years | skipped |
+| 2026-08-18 09:32 | MaximaTek | Product Design Engineer | ~10 | email-only; cannot send mail | skipped |
 
 Optimizations that landed this run:
 1. Playwright Ashby/Greenhouse fill from `profile.json` (~30s structured fields)
@@ -21,4 +30,4 @@ Optimizations that landed this run:
 3. Ashby spam → desktop Chrome once
 4. Gate: Google hard-skip; fix US-Person/`25+ years` false positives; skip aggregators
 5. Do not harvest apply URLs from LinkedIn guest (login wall)
-6. iCIMS/Workday (Allegis, Target) go through desktop Chrome, not Playwright guess-fills
+6. iCIMS/Workday: desktop Chrome only. Allegis needs Zack’s existing iCIMS password; don’t grind CAPTCHA. Target posting may 404 — check once then skip.

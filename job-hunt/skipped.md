@@ -7,8 +7,7 @@ Guest inventory: 30 unique jobs (`start=0,25,50`). Apply list is in `runs/2026-0
 | Company | Role | Job ID | Why skip |
 | --- | --- | --- | --- |
 | State Farm | Product Designer | 4451437464 / 4451429545 | Knockout: must already be eligible to work in the US; **will not sponsor** |
-| Crossing Hurdles | Product Designer \| New York | 4390738931 | JD **10+ years** |
-| Stealth Startup | Product Design Lead [33301] | 4452228163 | Overly senior title (Lead) |
+| Crossing Hurdles | Product Designer \| New York | 4390738931 | Recruiter listing for **Basis** (3–10 YOE, not 10+). Basis Ashby `jobs.ashbyhq.com/basis-ai` has no Product Designer posting. |
 | Agentio | Product Designer | 4388164921 | JD is **Senior** + **6+ years** product design |
 | Saronic Technologies | Product Designer (UI/UX) | 4407220516 | **6+ years** + export-controlled **US Person** (citizen / green card / asylee) |
 | Radar | Senior Product Designer | 4454403262 | Senior title + 5+ years |
@@ -50,3 +49,10 @@ Guest inventory: 30 unique jobs (`start=0,25,50`). Apply list is in `runs/2026-0
 | Google | Staff UX Designer, Ads in Search AI Experiences | 4454289340 | Staff + Zack: do not apply to Google |
 | Checkr | Staff Product Designer, Growth | 4455366504 / 4455354663 | **Staff in title** |
 | Hexaware Technologies | Salesforce UX Designer | 4454264141 | No Ashby/Greenhouse/Workday apply URL. Official board is Oracle HCM `https://jobs.hexaware.com/` (307 reqs); Plano/Salesforce UX Designer is not listed. Ashby boards 404 (not spam). |
+| Allegis Group | UX Designer | 4454412087 | iCIMS account already exists for zackw294@outlook.com; password unknown; login failed. Needs Zack to sign in. |
+| Target | Senior UX Product Designer - Stores Experience | 4445347943 | Workday posting R0000442885 gone (“page doesn’t exist”) |
+| Primis | Senior Product Designer | 4454283745 | Recruiter (Ellie Smith / Primis Talent). Client unnamed. No Ashby/Greenhouse/Lever apply URL. Did not email. |
+| HeartCentrix Solutions | User Experience Designer | 4440496344 | 3+ YOE (5+ nice-to-have). LinkedIn Easy Apply only; company Matador board has TEST listings, not this DFW role. |
+| Deloitte | User Experience Designer | 4455546599 | Knockout: **must be authorized without employer sponsorship, now or in the future** |
+| Photon | Senior User Experience Designer | 4451199451 | JD **over six years** |
+| MaximaTek | Product Design Engineer | 4454277642 | Email-only apply (`srikanth.c@maximatek.com`). Outlook is read-only; cannot send. |
