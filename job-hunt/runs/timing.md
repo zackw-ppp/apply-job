@@ -23,6 +23,7 @@ Card so far: **computerUse click-by-click** (2–8 min/field-heavy form) vs **Pl
 | 2026-08-18 09:32 | Deloitte | UX Designer | ~10 | no-sponsor knockout | skipped |
 | 2026-08-18 09:32 | Photon | Senior UX | ~5 | over six years | skipped |
 | 2026-08-18 09:32 | MaximaTek | Product Design Engineer | ~10 | email-only; cannot send mail | skipped |
+| 2026-08-18 09:39 | Aaru | Product Design Lead | ~120 | Ashby spam in Playwright and desktop Chrome | blocked |
 
 Optimizations that landed this run:
 1. Playwright Ashby/Greenhouse fill from `profile.json` (~30s structured fields)

@@ -56,3 +56,4 @@ Guest inventory: 30 unique jobs (`start=0,25,50`). Apply list is in `runs/2026-0
 | Deloitte | User Experience Designer | 4455546599 | Knockout: **must be authorized without employer sponsorship, now or in the future** |
 | Photon | Senior User Experience Designer | 4451199451 | JD **over six years** |
 | MaximaTek | Product Design Engineer | 4454277642 | Email-only apply (`srikanth.c@maximatek.com`). Outlook is read-only; cannot send. |
+| Aaru / Stealth Startup | Product Design Lead [33301] | 4452228163 | Ashby `jobs.ashbyhq.com/aaru/ca4adc3e-6225-4730-9b2b-df451504194f` flagged as spam in Playwright **and** desktop Chrome. Stopped after one desktop retry. Needs Zack to submit from another network/browser. |
