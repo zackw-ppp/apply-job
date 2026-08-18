@@ -33,6 +33,8 @@ Guest inventory: 30 unique jobs (`start=0,25,50`). Apply list is in `runs/2026-0
 | CivilGrid | Senior UX Designer | 4454290793 | Senior |
 | icreatives | Design Engineer 5WR5Y635 | 4440197273 | 5+ years / senior-comp Design Engineer, not a mid product-designer seat |
 | LodgeLink | Senior Product Designer | 4438764462 | Senior IC + mentorship |
+| Epic (Epic Systems) | User Experience Designer | 4306633095 | Knockout: **eligible to work in the U.S. without visa sponsorship**. Official ATS is custom Avature `https://epic.avature.net/Careers/FolderDetail/User-Experience-Designer/752` — Playwright cannot fill |
+| Evlo AI | UX Designer | 4454292662 | Spam/fake multi-city mill (Dallas/Chicago/Raleigh/Seattle clones); evlo.ai is a gig marketplace with no careers ATS (Ashby/Greenhouse/Lever 404) |
 | Posted.Careers / Secureframe | Product Designer (LinkedIn) / Senior on careers | 4455377812 | Official Secureframe board is **Senior Product Designer** — skip as overly senior |
 | Affirm | Staff Product Designer | 4368287093 / 4368285213 | **Staff in title** |
 | Valon | Staff Product Designer, Product Infrastructure | 4366517577 / 4366525520 | **Staff in title** |

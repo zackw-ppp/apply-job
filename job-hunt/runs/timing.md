@@ -10,6 +10,8 @@ Card so far: **computerUse click-by-click** (2–8 min/field-heavy form) vs **Pl
 | 2026-08-18 08:30 | Wispr Flow | Design Engineer, Mobile | 7–11 | Ashby spam flag on Playwright Chrome | blocked (retry in real desktop Chrome) |
 | 2026-08-18 08:52 | Babylist | Senior PD, AI Registry | 108 | Greenhouse 8-box OTP (Outlook read-only) | **submitted** |
 | 2026-08-18 09:01 | Wispr Flow | Design Engineer, Mobile | — | desktop Chrome (Ashby spam on Playwright) | **submitted** |
+| 2026-08-18 09:25 | Epic | User Experience Designer | ~40 | URL hunt → Avature; visa knockout | skipped |
+| 2026-08-18 09:25 | Evlo AI | UX Designer | ~30 | URL hunt; no ATS; multi-city mill | skipped |
 
 Optimizations that landed this run:
 1. Playwright Ashby/Greenhouse fill from `profile.json` (~30s structured fields)
