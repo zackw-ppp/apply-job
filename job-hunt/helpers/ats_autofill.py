@@ -34,6 +34,7 @@ SUCCESS_RE = re.compile(
 )
 ALREADY_RE = re.compile(r"already applied|wait 180 days|you previously applied", re.I)
 CODE_RE = re.compile(r"security code|verification code|enter the code|one-time", re.I)
+SPAM_RE = re.compile(r"possible spam|flagged as possible spam", re.I)
 
 
 def n(s: str) -> str:
@@ -45,6 +46,10 @@ def body_text(page) -> str:
         return page.inner_text("body")
     except Exception:
         return ""
+
+
+def by_id(page, fid: str):
+    return page.locator(f'[id="{fid}"]')
 
 
 def click_text(page, text: str) -> bool:
@@ -60,27 +65,108 @@ def click_text(page, text: str) -> bool:
         return False
 
 
+def pick_combo(page, el, wanted: str, log: list, key: str = "") -> bool:
+    """Greenhouse/Ashby React-Select: click, then pick from THIS listbox only."""
+    if not wanted or not el.count():
+        return False
+    box = el.first
+    want = n(wanted)
+    try:
+        box.click(timeout=2500)
+        page.wait_for_timeout(180)
+        controls = box.get_attribute("aria-controls") or box.get_attribute("aria-owns") or ""
+        opts = (
+            page.locator(f'[id="{controls}"] [role="option"]')
+            if controls
+            else page.locator('[role="option"]')
+        )
+
+        def click_match() -> bool:
+            total = min(opts.count(), 120)
+            for i in range(total):
+                t = n(opts.nth(i).inner_text())
+                if not t:
+                    continue
+                if t == want or t.startswith(want) or want in t:
+                    opts.nth(i).click(timeout=2000)
+                    log.append(f"combo:{key}={wanted}")
+                    return True
+            return False
+
+        if click_match():
+            return True
+        # filter by typing
+        box.fill("")
+        box.press_sequentially(wanted[:48], delay=15)
+        page.wait_for_timeout(220)
+        if click_match():
+            return True
+        if opts.count():
+            opts.first.click(timeout=2000)
+            log.append(f"combo-first:{key}")
+            return True
+        page.keyboard.press("Enter")
+        log.append(f"combo-enter:{key}")
+        return True
+    except Exception as e:
+        log.append(f"combo-fail:{key}:{e}")
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+        return False
+
+
+def set_field(page, fid: str, val: str, log: list, key: str = "") -> bool:
+    el = by_id(page, fid)
+    if not el.count():
+        return False
+    node = el.first
+    role = (node.get_attribute("role") or "").lower()
+    typ = (node.get_attribute("type") or "text").lower()
+    tag = node.evaluate("e => e.tagName")
+    if typ in {"hidden", "file"}:
+        return False
+    if typ == "checkbox":
+        try:
+            if n(val) in {"yes", "true", "on", "1"}:
+                node.check()
+            log.append(f"check:{key or fid}")
+            return True
+        except Exception:
+            return False
+    if tag == "SELECT":
+        opts = node.locator("option").all_inner_texts()
+        pick = next((o for o in opts if n(val) in n(o) or n(o) == n(val)), None)
+        if pick:
+            node.select_option(label=pick)
+            log.append(f"sel:{key or fid}={pick}")
+            return True
+        return False
+    if role == "combobox":
+        return pick_combo(page, el, val, log, key or fid)
+    try:
+        node.fill(val)
+        log.append(f"fill:{key or fid}")
+        return True
+    except Exception as e:
+        log.append(f"fail:{fid}:{e}")
+        return False
+
+
 def click_apply_if_needed(page) -> bool:
-    """Job boards often show a listing page with Apply before the form."""
-    if page.locator("input[type=file], #first_name, input[type=email]").count():
+    if page.locator("input[type=file], [id='first_name'], input[type=email]").count():
         return False
     for pat in (r"^apply$", r"^apply now$", r"^apply for this job$"):
-        btn = page.get_by_role("button", name=re.compile(pat, re.I))
-        if btn.count():
-            try:
-                btn.first.click(timeout=3000)
-                page.wait_for_timeout(800)
-                return True
-            except Exception:
-                continue
-        link = page.get_by_role("link", name=re.compile(pat, re.I))
-        if link.count():
-            try:
-                link.first.click(timeout=3000)
-                page.wait_for_timeout(800)
-                return True
-            except Exception:
-                continue
+        for kind in ("button", "link"):
+            loc = page.get_by_role(kind, name=re.compile(pat, re.I))
+            if loc.count():
+                try:
+                    loc.first.click(timeout=3000)
+                    page.wait_for_timeout(700)
+                    return True
+                except Exception:
+                    continue
     return False
 
 
@@ -91,24 +177,84 @@ def accept_required_checks(page, log: list) -> None:
         try:
             if el.is_checked():
                 continue
-            label = n(el.evaluate(
-                """e => {
+            label = n(
+                el.evaluate(
+                    """e => {
                   const id = e.id;
                   if (id) {
-                    const l = document.querySelector('label[for="'+id+'"]');
+                    const l = document.querySelector('label[for="'+CSS.escape(id)+'"]');
                     if (l) return l.innerText;
                   }
                   return (e.closest('label') || e.parentElement || e).innerText || '';
                 }"""
-            ))
-            if re.search(
-                r"privacy|terms|consent|agree|acknowledge|gdpr|i have read|required",
-                label,
-            ) and not re.search(r"text message|sms|marketing", label):
+                )
+            )
+            if re.search(r"privacy|terms|consent|agree|acknowledge|gdpr|i have read", label) and not re.search(
+                r"text message|sms|marketing", label
+            ):
                 el.check()
                 log.append(f"check:{label[:40]}")
         except Exception:
             continue
+
+
+def answer_for_question(text: str) -> str | None:
+    q = n(text)
+    if "linkedin" in q:
+        return P["linkedin"]
+    if "github" in q or "birth" in q or "date of birth" in q:
+        return ""
+    if "portfolio" in q or "website" in q or "personal url" in q:
+        return P["portfolio"]
+    if "pronoun" in q:
+        return "Prefer not to say"
+    if ("address" in q and "email" not in q) or q.startswith("address"):
+        return P["street"]
+    if "zip" in q or "postal" in q:
+        return P["zip"]
+    if "city of residence" in q or (q.startswith("city") and "location" not in q):
+        return P["city"]
+    if "state or canadian" in q or "province" in q:
+        return P["state"]
+    if "country of residence" in q or (q.startswith("country") and "code" not in q):
+        return P["country"]
+    if "authorized" in q and ("without" in q or "sponsor" in q or "any employer" in q):
+        return "No"
+    if "authorized to work" in q:
+        return "No"
+    if "sponsor" in q or "visa" in q or "immigration" in q:
+        return "Yes"
+    if "relocat" in q:
+        return "Yes"
+    if "last company" in q or q.startswith("company name"):
+        return "Trip.com"
+    if "last job title" in q or (q.startswith("title") and "gender" not in q):
+        return "UX Designer"
+    if "referred" in q:
+        return "No"
+    if "text message" in q or "sms" in q:
+        return "No"
+    if "how did you hear" in q or (q.startswith("hear") or "source" in q):
+        return "LinkedIn"
+    if "year" in q and "experience" in q:
+        return P["years"]
+    if "gender" in q or "hispanic" in q or "veteran" in q or "disability" in q or "race" in q or "ethnicity" in q:
+        return "Decline to self-identify"
+    if "privacy" in q or "confidential" in q or "acknowledge" in q:
+        return "I agree"
+    if "school" in q:
+        return "University of Washington"
+    if "start date month" in q:
+        return "June"
+    if "start date year" in q:
+        return "2022"
+    if "end date month" in q:
+        return "August"
+    if "end date year" in q:
+        return "2024"
+    if "cover" in q or "why " in q or "additional" in q:
+        return WHY
+    return None
 
 
 def fill_ashby(page) -> dict:
@@ -119,7 +265,7 @@ def fill_ashby(page) -> dict:
         if files.count():
             files.first.set_input_files(RESUME)
             log.append("resume")
-            page.wait_for_timeout(500)
+            page.wait_for_timeout(600)
 
     def qtext(el) -> str:
         return el.evaluate(
@@ -161,19 +307,13 @@ def fill_ashby(page) -> dict:
         if val is None:
             continue
         try:
-            el.click()
-            el.fill(val)
-            log.append(f"fill:{q[:50]}")
-            if "location" in q:
-                page.wait_for_timeout(600)
-                opt = page.get_by_text(re.compile(r"Shoreline", re.I)).first
-                if opt.count():
-                    opt.click(timeout=1500)
-                    log.append("location:Shoreline")
-                else:
-                    page.keyboard.press("ArrowDown")
-                    page.keyboard.press("Enter")
-                    log.append("location-enter")
+            role = (el.get_attribute("role") or "").lower()
+            if role == "combobox" or "location" in q:
+                pick_combo(page, el, val, log, q[:40])
+            else:
+                el.click()
+                el.fill(val)
+                log.append(f"fill:{q[:50]}")
         except Exception as e:
             log.append(f"fail-fill:{e}")
 
@@ -214,132 +354,59 @@ def fill_greenhouse(page) -> dict:
         if files.count():
             files.first.set_input_files(RESUME)
             log.append("resume")
-            page.wait_for_timeout(400)
+            page.wait_for_timeout(500)
 
-    mapping_ids = {
-        "first_name": P["first_name"],
-        "last_name": P["last_name"],
-        "preferred_name": P["first_name"],
-        "email": P["email"],
-        "phone": P["phone"],
-        "candidate-location": f"{P['city']}, {P['state']}, United States",
-        "country": P["country"],
-    }
-    for fid, val in mapping_ids.items():
-        loc = page.locator(f"#{fid}")
-        if loc.count():
-            try:
-                loc.first.click()
-                loc.first.fill(val)
-                log.append(fid)
-                if fid in {"candidate-location", "country"}:
-                    page.wait_for_timeout(400)
-                    opt = page.get_by_text(re.compile(r"Shoreline|Washington, United States", re.I))
-                    if opt.count():
-                        opt.first.click(timeout=1500)
-                    else:
-                        page.keyboard.press("ArrowDown")
-                        page.keyboard.press("Enter")
-            except Exception as e:
-                log.append(f"fail:{fid}:{e}")
+    set_field(page, "first_name", P["first_name"], log, "first_name")
+    set_field(page, "last_name", P["last_name"], log, "last_name")
+    set_field(page, "preferred_name", P["first_name"], log, "preferred_name")
+    set_field(page, "email", P["email"], log, "email")
+    set_field(page, "country", P["country"], log, "country")
+    set_field(page, "phone", P["phone_national"], log, "phone")
+    set_field(
+        page,
+        "candidate-location",
+        f"{P['city']}, {P['state']}, United States",
+        log,
+        "location",
+    )
+    set_field(page, "company-name-0", "Trip.com", log, "company")
+    set_field(page, "title-0", "UX Designer", log, "title")
+    set_field(page, "start-date-month-0", "June", log, "start-month")
+    set_field(page, "start-date-year-0", "2022", log, "start-year")
+    set_field(page, "end-date-month-0", "August", log, "end-month")
+    set_field(page, "end-date-year-0", "2024", log, "end-year")
+    set_field(page, "school--0", "University of Washington", log, "school")
 
     for i in range(page.locator("label[for]").count()):
         lab = page.locator("label[for]").nth(i)
-        text = n(lab.inner_text())
-        fid = lab.get_attribute("for") or ""
-        if not fid or fid in mapping_ids:
-            continue
-        val = None
-        if "linkedin" in text:
-            val = P["linkedin"]
-        elif "address" in text and "email" not in text:
-            val = P["street"]
-        elif "zip" in text or "postal" in text:
-            val = P["zip"]
-        elif "city of residence" in text:
-            val = P["city"]
-        elif "state or canadian" in text or "province" in text:
-            val = P["state"]
-        elif "country of residence" in text:
-            val = P["country"]
-        elif "authorized to work" in text or "without needing sponsorship" in text:
-            val = "No"
-        elif "sponsor" in text or "visa" in text:
-            val = "Yes"
-        elif "last company" in text:
-            val = "Ansys (Synopsys) / Trip.com"
-        elif "last job title" in text:
-            val = "UX Designer"
-        elif "referred" in text:
-            val = "No"
-        elif "pronoun" in text:
-            val = ""
-        elif "text messages" in text:
-            val = "No"
-        elif "github" in text or "birth" in text:
-            val = ""
-        elif "portfolio" in text or "website" in text:
-            val = P["portfolio"]
-        elif "year" in text and "experience" in text:
-            val = P["years"]
-        elif "gender" in text or "hispanic" in text or "veteran" in text or "disability" in text:
-            val = "Decline to self-identify"
-        elif "hear" in text or "how did you" in text:
-            val = P["hear"]
-        elif "relocat" in text:
-            val = "Yes"
-        elif "cover" in text or "why " in text or "additional" in text:
-            val = WHY
-        if val is None:
-            continue
-        box = page.locator(f"#{fid}")
-        if not box.count():
-            continue
         try:
-            tag = box.first.evaluate("e => e.tagName")
-            if tag == "SELECT":
-                opts = box.locator("option").all_inner_texts()
-                pick = next((o for o in opts if n(o) == n(val) or n(val) in n(o)), None)
-                if not pick and val in ("Yes", "No"):
-                    pick = next((o for o in opts if n(o).startswith(n(val))), None)
-                if not pick and "decline" in n(val):
-                    pick = next((o for o in opts if "decline" in n(o) or "wish not" in n(o)), None)
-                if pick:
-                    box.select_option(label=pick)
-                    log.append(f"qsel:{text[:40]}")
-            else:
-                box.fill(val)
-                log.append(f"q:{text[:40]}")
-                if "location" in text or "country" in text or "city" in text or "state" in text:
-                    page.wait_for_timeout(250)
-                    page.keyboard.press("ArrowDown")
-                    page.keyboard.press("Enter")
-        except Exception as e:
-            log.append(f"fail:{fid}:{e}")
-
-    for i in range(page.locator("select").count()):
-        el = page.locator("select").nth(i)
-        try:
-            label = n(el.evaluate("e => (e.closest('label')||e.parentElement).innerText"))
-            opts = el.locator("option").all_inner_texts()
-            pick = None
-            if "sponsor" in label or "visa" in label:
-                pick = next((o for o in opts if n(o) == "yes" or n(o).startswith("yes")), None)
-            elif "authorized" in label:
-                pick = next((o for o in opts if n(o) == "no" or n(o).startswith("no")), None)
-            elif "relocat" in label:
-                pick = next((o for o in opts if n(o) == "yes" or n(o).startswith("yes")), None)
-            elif "gender" in label or "race" in label or "veteran" in label or "disability" in label or "hispanic" in label:
-                pick = next((o for o in opts if "decline" in n(o) or "wish" in n(o)), None)
-            elif "country" in label:
-                pick = next((o for o in opts if "united states" in n(o)), None)
-            elif "hear" in label or "source" in label:
-                pick = next((o for o in opts if "linkedin" in n(o)), None)
-            if pick:
-                el.select_option(label=pick)
-                log.append(f"select:{label[:30]}={pick}")
+            text = lab.inner_text()
         except Exception:
             continue
+        fid = lab.get_attribute("for") or ""
+        if not fid or fid in {
+            "first_name",
+            "last_name",
+            "preferred_name",
+            "email",
+            "phone",
+            "country",
+            "candidate-location",
+            "resume",
+            "resume_text",
+            "company-name-0",
+            "title-0",
+            "start-date-month-0",
+            "start-date-year-0",
+            "end-date-month-0",
+            "end-date-year-0",
+            "school--0",
+        }:
+            continue
+        val = answer_for_question(text)
+        if val is None:
+            continue
+        set_field(page, fid, val, log, n(text)[:40])
 
     accept_required_checks(page, log)
     return {"log": log}
@@ -352,14 +419,19 @@ def enter_code(page, code: str, log: list) -> None:
     for i in range(min(loc.count(), 8)):
         el = loc.nth(i)
         try:
-            q = n((el.get_attribute("name") or "") + " " + (el.get_attribute("id") or "") + " " + (el.get_attribute("placeholder") or ""))
+            q = n(
+                (el.get_attribute("name") or "")
+                + " "
+                + (el.get_attribute("id") or "")
+                + " "
+                + (el.get_attribute("placeholder") or "")
+            )
             if "code" in q or loc.count() == 1:
                 el.fill(code)
                 log.append("code")
                 return
         except Exception:
             continue
-    # last resort: first visible short text input
     try:
         page.locator("input:visible").first.fill(code)
         log.append("code-first")
@@ -384,13 +456,43 @@ def click_submit(page) -> bool:
             return False
 
 
-def classify(page) -> tuple[bool, bool, bool, str]:
+def classify(page) -> tuple[bool, bool, bool, bool, str]:
     text = body_text(page)
     low = n(text)
     submitted = bool(SUCCESS_RE.search(low))
     already = bool(ALREADY_RE.search(low))
     need_code = bool(CODE_RE.search(low))
-    return submitted, already, need_code, text[:900]
+    spam = bool(SPAM_RE.search(low))
+    return submitted, already, need_code, spam, text[:900]
+
+
+def launch_browser(p, headed: bool):
+    return p.chromium.launch(
+        headless=not headed,
+        channel="chrome",
+        args=[
+            "--no-sandbox",
+            "--disable-dev-shm-usage",
+            "--disable-blink-features=AutomationControlled",
+        ],
+        ignore_default_args=["--enable-automation"],
+    )
+
+
+def new_page(browser):
+    context = browser.new_context(
+        user_agent=(
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/128.0.0.0 Safari/537.36"
+        ),
+        viewport={"width": 1400, "height": 900},
+        locale="en-US",
+        timezone_id="America/Los_Angeles",
+    )
+    context.add_init_script(
+        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+    )
+    return context, context.new_page()
 
 
 def main() -> int:
@@ -403,23 +505,22 @@ def main() -> int:
     args = ap.parse_args()
     t0 = time.time()
     with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=not args.headed, args=["--no-sandbox", "--disable-dev-shm-usage"]
-        )
-        page = browser.new_page()
+        browser = launch_browser(p, args.headed)
+        context, page = new_page(browser)
         page.goto(args.url, wait_until="domcontentloaded", timeout=60000)
-        page.wait_for_timeout(700)
+        page.wait_for_timeout(900)
         clicked_apply = click_apply_if_needed(page)
-        host = page.url
         already = False
         submitted = False
         need_code = False
+        spam = False
         confirm = ""
-        _, already, _, confirm = classify(page)
+        _, already, _, spam, confirm = classify(page)
+        result = {"log": []}
         if already:
             result = {"log": ["already-applied"]}
         else:
-            if "ashbyhq.com" in host:
+            if "ashbyhq.com" in page.url:
                 result = fill_ashby(page)
             else:
                 result = fill_greenhouse(page)
@@ -441,17 +542,20 @@ def main() -> int:
             if args.code:
                 enter_code(page, args.code, result.setdefault("log", []))
             if args.submit:
+                page.wait_for_timeout(800)
                 clicked = click_submit(page)
                 result.setdefault("log", []).append("submit-click" if clicked else "no-submit-btn")
-                for _ in range(8):
-                    page.wait_for_timeout(700)
-                    submitted, already, need_code, confirm = classify(page)
-                    if submitted or already or need_code:
+                for _ in range(10):
+                    page.wait_for_timeout(600)
+                    submitted, already, need_code, spam, confirm = classify(page)
+                    if submitted or already or need_code or spam:
                         break
-                if not submitted and not already and not need_code and clicked:
+                if spam:
+                    result.setdefault("log", []).append("spam-flag")
+                if not submitted and not already and not need_code and not spam and clicked:
                     click_submit(page)
-                    page.wait_for_timeout(2000)
-                    submitted, already, need_code, confirm = classify(page)
+                    page.wait_for_timeout(2500)
+                    submitted, already, need_code, spam, confirm = classify(page)
         safe = re.sub(r"[^A-Za-z0-9]+", "", args.company) or "job"
         shot = f"/tmp/apply-{safe}.png"
         try:
@@ -466,6 +570,7 @@ def main() -> int:
             "submitted": submitted,
             "already_applied": already,
             "need_code": need_code,
+            "spam": spam,
             "log": result.get("log"),
             "final_url": page.url,
             "screenshot": shot,
@@ -474,6 +579,7 @@ def main() -> int:
         print(json.dumps(out, indent=2))
         Path("/tmp/ats-last-fill.json").write_text(json.dumps(out, indent=2))
         Path(f"/tmp/ats-{safe}.json").write_text(json.dumps(out, indent=2))
+        context.close()
         browser.close()
     return 0 if submitted or already else (2 if need_code else 1)
 
