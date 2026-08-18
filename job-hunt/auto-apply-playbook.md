@@ -23,17 +23,17 @@ LinkedIn search for this session:
 
 `https://www.linkedin.com/jobs/search-results/?currentJobId=4451437464&keywords=product%20designer&origin=JOB_SEARCH_PAGE_JOB_FILTER&start=0&geoId=103644278&f_TPR=r86400`
 
-Scope: **pages 1–3** (`start=0, 25, 50`). Titles: product designer / product engineer / UX. Exclude physical/industrial designers and overly senior (Senior / Staff / Principal / Lead / Director).
+Scope: **pages 1–3**, **25 jobs per page** (`start=0, 25, 50` → 75 cards). Titles: product designer / product engineer / UX. Exclude physical/industrial designers. **Staff in the title = skip.** Senior/Lead/Principal titles can still be applied to. Overly senior for years means **JD asks for 5+ years**.
 
 ## 2. Gate (before opening the form)
 
 Stop if any of these are true:
 
 - Already in `applied.md`
-- JD minimum years is **5+**
+- JD minimum years is **5+** (Senior/Lead/Principal title alone is not a skip)
+- **Staff** appears in the job title
 - Knockout: must already have work authorization / no sponsorship / US Person / citizen-only
 - Hard-skip company/role already listed
-- Title is Senior / Staff / Principal / Lead / Head / Director / VP
 - Physical product / industrial / fashion / interior / graphic-only
 - Not NL, SG, AU, NZ — **unless Zack overrides** (this LinkedIn URL is a US override)
 

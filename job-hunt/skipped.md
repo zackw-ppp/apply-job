@@ -34,3 +34,8 @@ Guest inventory: 30 unique jobs (`start=0,25,50`). Apply list is in `runs/2026-0
 | icreatives | Design Engineer 5WR5Y635 | 4440197273 | 5+ years / senior-comp Design Engineer, not a mid product-designer seat |
 | LodgeLink | Senior Product Designer | 4438764462 | Senior IC + mentorship |
 | Posted.Careers / Secureframe | Product Designer (LinkedIn) / Senior on careers | 4455377812 | Official Secureframe board is **Senior Product Designer** — skip as overly senior |
+| Affirm | Staff Product Designer | 4368287093 / 4368285213 | **Staff in title** |
+| Valon | Staff Product Designer, Product Infrastructure | 4366517577 / 4366525520 | **Staff in title** |
+| Babylist | Staff Product Designer, AI Builder | 4454290088 | **Staff in title** |
+| Google | Staff UX Designer, Ads in Search AI Experiences | 4454289340 | **Staff in title** (also 8 years of experience) |
+| Checkr | Staff Product Designer, Growth | 4455366504 / 4455354663 | **Staff in title** |

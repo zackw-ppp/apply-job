@@ -11,9 +11,6 @@ import json
 import re
 import sys
 
-SENIOR = re.compile(
-    r"\b(staff|principal|lead|director|head of|vp\b|vice president|senior)\b", re.I
-)
 ROLE_OK = re.compile(
     r"\b(product designer|product engineer|ux designer|ui/ux|ui ux|ux/ui|product design)\b",
     re.I,
@@ -33,14 +30,22 @@ NO_SPONSOR = re.compile(
     re.I,
 )
 YEARS = re.compile(r"(\d+)\+\s*(?:years?|yrs?)", re.I)
+YEARS_OF = re.compile(
+    r"(?:over\s+)?(\d+|five|six|seven|eight|nine|ten)\s+years?\s+(?:of\s+)?(?:progressively )?(?:experience|product design|ux)",
+    re.I,
+)
+WORD_YEARS = {"five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
 
 
 def gate(title: str, company: str, jd: str) -> tuple[bool, str]:
     t = title or ""
     text = f"{t}\n{jd or ''}"
-    if SENIOR.search(t):
-        return False, f"overly senior title: {t}"
-    if t.strip().lower() == "designer" or not ROLE_OK.search(t):
+    # Senior/Lead titles are OK. Staff in the title is a skip.
+    if re.search(r"\bstaff\b", t, re.I):
+        return False, f"Staff title: {t}"
+    if not ROLE_OK.search(t) and not re.search(
+        r"\b(ux|ui|product engineer|product design)\b", t, re.I
+    ):
         return False, f"not product designer / product engineer / UX: {t}"
     if PHYSICAL.search(text):
         return False, "physical / industrial designer"
