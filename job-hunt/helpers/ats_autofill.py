@@ -33,7 +33,10 @@ SUCCESS_RE = re.compile(
     re.I,
 )
 ALREADY_RE = re.compile(r"already applied|wait 180 days|you previously applied", re.I)
-CODE_RE = re.compile(r"security code|verification code|enter the code|one-time", re.I)
+CODE_RE = re.compile(
+    r"verification code was sent|enter the 8-character|confirm you're a human|confirm you’re a human",
+    re.I,
+)
 SPAM_RE = re.compile(r"possible spam|flagged as possible spam", re.I)
 
 
@@ -242,7 +245,11 @@ def answer_for_question(text: str) -> str | None:
     if "year" in q and "experience" in q:
         return P["years"]
     if "gender" in q or "hispanic" in q or "veteran" in q or "disability" in q or "race" in q or "ethnicity" in q:
-        return "Decline to self-identify"
+        if "veteran" in q:
+            return "I do not want to answer"
+        if "disability" in q:
+            return "I do not want to answer"
+        return "Decline To Self Identify"
     if "privacy" in q or "confidential" in q or "acknowledge" in q:
         return "I agree"
     if "school" in q:
@@ -427,44 +434,45 @@ def fill_greenhouse(page) -> dict:
 
 
 def enter_code(page, code: str, log: list) -> None:
+    labeled = page.get_by_label(re.compile(r"security code|verification code", re.I))
+    if labeled.count():
+        labeled.first.fill(code)
+        log.append("code-label")
+        return
     loc = page.locator(
-        "input[name*=code], input[id*=code], input[autocomplete=one-time-code], input[type=text]"
+        "input[name*=code], input[id*=code], input[autocomplete=one-time-code]"
     )
-    for i in range(min(loc.count(), 8)):
-        el = loc.nth(i)
-        try:
-            q = n(
-                (el.get_attribute("name") or "")
-                + " "
-                + (el.get_attribute("id") or "")
-                + " "
-                + (el.get_attribute("placeholder") or "")
-            )
-            if "code" in q or loc.count() == 1:
-                el.fill(code)
-                log.append("code")
-                return
-        except Exception:
-            continue
+    if loc.count():
+        loc.first.fill(code)
+        log.append("code")
+        return
+    # last visible short input near the submit button
     try:
-        page.locator("input:visible").first.fill(code)
-        log.append("code-first")
+        page.locator("input[type=text]:visible").last.fill(code)
+        log.append("code-last")
     except Exception:
         log.append("code-miss")
 
 
 def click_submit(page) -> bool:
-    btn = page.get_by_role("button", name=re.compile(r"submit", re.I))
+    try:
+        page.keyboard.press("Escape")
+    except Exception:
+        pass
+    btn = page.get_by_role("button", name=re.compile(r"submit application", re.I))
     if btn.count() == 0:
-        btn = page.get_by_role("button", name=re.compile(r"send application|apply now|^apply$", re.I))
+        btn = page.locator('button[type="submit"]')
+    if btn.count() == 0:
+        btn = page.get_by_role("button", name=re.compile(r"submit", re.I))
     if btn.count() == 0:
         return False
     try:
-        btn.first.click(timeout=4000)
+        btn.last.scroll_into_view_if_needed()
+        btn.last.click(timeout=4000)
         return True
     except Exception:
         try:
-            btn.last.click(timeout=4000)
+            btn.last.click(timeout=4000, force=True)
             return True
         except Exception:
             return False
@@ -516,6 +524,7 @@ def main() -> int:
     ap.add_argument("--submit", action="store_true")
     ap.add_argument("--headed", action="store_true")
     ap.add_argument("--code", default="")
+    ap.add_argument("--wait-code-file", default="/tmp/gh-code.txt")
     args = ap.parse_args()
     t0 = time.time()
     with sync_playwright() as p:
@@ -570,6 +579,27 @@ def main() -> int:
                     click_submit(page)
                     page.wait_for_timeout(2500)
                     submitted, already, need_code, spam, confirm = classify(page)
+                if need_code and not submitted:
+                    code = (args.code or "").strip()
+                    code_path = Path(args.wait_code_file) if args.wait_code_file else None
+                    Path("/tmp/ats-waiting-code").write_text(args.company)
+                    result.setdefault("log", []).append("waiting-code")
+                    for _ in range(180):
+                        if not code and code_path and code_path.exists():
+                            code = code_path.read_text().strip().split()[0]
+                        if code and len(code) >= 6:
+                            break
+                        page.wait_for_timeout(1000)
+                    if code and len(code) >= 6:
+                        enter_code(page, code, result.setdefault("log", []))
+                        click_submit(page)
+                        for _ in range(10):
+                            page.wait_for_timeout(600)
+                            submitted, already, need_code, spam, confirm = classify(page)
+                            if submitted or already:
+                                break
+                    else:
+                        result.setdefault("log", []).append("code-timeout")
         safe = re.sub(r"[^A-Za-z0-9]+", "", args.company) or "job"
         shot = f"/tmp/apply-{safe}.png"
         try:
