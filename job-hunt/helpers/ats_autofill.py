@@ -434,21 +434,35 @@ def fill_greenhouse(page) -> dict:
 
 
 def enter_code(page, code: str, log: list) -> None:
+    code = re.sub(r"\s+", "", code or "")
+    if len(code) < 6:
+        log.append("code-short")
+        return
+    boxes = page.locator("input[maxlength='1']:visible")
+    if boxes.count() >= len(code):
+        for i, ch in enumerate(code):
+            boxes.nth(i).fill(ch)
+        log.append(f"code-8box:{len(code)}")
+        return
     labeled = page.get_by_label(re.compile(r"security code|verification code", re.I))
     if labeled.count():
-        labeled.first.fill(code)
-        log.append("code-label")
+        labeled.first.click()
+        labeled.first.fill("")
+        page.keyboard.type(code, delay=40)
+        log.append("code-type")
         return
     loc = page.locator(
         "input[name*=code], input[id*=code], input[autocomplete=one-time-code]"
     )
     if loc.count():
-        loc.first.fill(code)
+        loc.first.click()
+        loc.first.fill("")
+        page.keyboard.type(code, delay=40)
         log.append("code")
         return
-    # last visible short input near the submit button
     try:
-        page.locator("input[type=text]:visible").last.fill(code)
+        page.locator("input[type=text]:visible").last.click()
+        page.keyboard.type(code, delay=40)
         log.append("code-last")
     except Exception:
         log.append("code-miss")
@@ -592,9 +606,13 @@ def main() -> int:
                         page.wait_for_timeout(1000)
                     if code and len(code) >= 6:
                         enter_code(page, code, result.setdefault("log", []))
-                        click_submit(page)
-                        for _ in range(10):
-                            page.wait_for_timeout(600)
+                        page.wait_for_timeout(400)
+                        clicked2 = click_submit(page)
+                        result.setdefault("log", []).append(
+                            "code-submit" if clicked2 else "code-no-submit"
+                        )
+                        for _ in range(12):
+                            page.wait_for_timeout(700)
                             submitted, already, need_code, spam, confirm = classify(page)
                             if submitted or already:
                                 break
