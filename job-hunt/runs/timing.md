@@ -12,6 +12,7 @@ Card so far: **computerUse click-by-click** (2–8 min/field-heavy form) vs **Pl
 | 2026-08-18 09:01 | Wispr Flow | Design Engineer, Mobile | — | desktop Chrome (Ashby spam on Playwright) | **submitted** |
 | 2026-08-18 09:25 | Epic | User Experience Designer | ~40 | URL hunt → Avature; visa knockout | skipped |
 | 2026-08-18 09:25 | Evlo AI | UX Designer | ~30 | URL hunt; no ATS; multi-city mill | skipped |
+| 2026-08-18 09:28 | Biorce | Junior/Mid PD (Austin) | ~180 | URL hunt; Revolut People not Ashby/GH/Lever/Workday | skipped |
 | 2026-08-18 09:26 | Hexaware | Salesforce UX Designer | ~50 | Oracle HCM careers; job not listed; no GH/WD URL | skipped |
 
 Optimizations that landed this run:
