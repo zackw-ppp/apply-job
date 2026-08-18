@@ -41,6 +41,8 @@ Guest inventory: 30 unique jobs (`start=0,25,50`). Apply list is in `runs/2026-0
 | Sundayy | Product Designer II | 4455266562 | Job board aggregator, not a hiring company |
 | Ladders | Product Designer | 4452231803 | Aggregator |
 | Booz Allen Hamilton | User Experience Designer | 4455364567 | Public Trust / US government client |
+| PepsiCo | UX Research/Design Sr Principal | 4452566576 | Principal / overly senior, not this pass |
+| Trane Technologies | Senior Product Designer | 4454278515 | Official careers page closed |
 | Google | UX Designer, Search Ads 360 | 4454258103 | **Zack: do not apply to Google** |
 | Google | Staff UX Designer, Ads in Search AI Experiences | 4454289340 | Staff + Zack: do not apply to Google |
 | Checkr | Staff Product Designer, Growth | 4455366504 / 4455354663 | **Staff in title** |
