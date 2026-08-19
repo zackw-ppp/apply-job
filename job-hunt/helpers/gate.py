@@ -18,7 +18,9 @@ ROLE_OK = re.compile(
 )
 PHYSICAL = re.compile(
     r"\b(industrial design|fashion designer|interior designer|packaging designer|"
-    r"find the right materials|mechanical enclosure)\b",
+    r"tabletop accessories|find the right materials|mechanical enclosure|"
+    r"mechanical design engineer|hardware design engineer|pcb design|"
+    r"graduate design engineer|associate design engineer)\b",
     re.I,
 )
 NO_SPONSOR = re.compile(
@@ -32,10 +34,28 @@ NO_SPONSOR = re.compile(
 )
 YEARS = re.compile(r"(?<!\d)(\d{1,2})\+\s*(?:years?|yrs?)", re.I)
 YEARS_OF = re.compile(
-    r"(?:over\s+)?(\d+|five|six|seven|eight|nine|ten)\s+years?\s+(?:of\s+)?(?:progressively )?(?:experience|product design|ux)",
+    r"(?:over\s+)?(\d+|five|six|seven|eight|nine|ten)\s+years?\s+"
+    r"(?:of\s+)?(?:progressively |dedicated )?(?:experience|product design|ux)",
     re.I,
 )
 WORD_YEARS = {"five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+SENIOR_TITLE = re.compile(r"\b(senior|lead|principal)\b", re.I)
+
+
+def _in_year_range(jd_body: str, m: re.Match) -> bool:
+    """Skip the high end of '3-10 years' / '3 to 10 years' (floor is the requirement)."""
+    before = jd_body[max(0, m.start() - 16) : m.start()]
+    return bool(re.search(r"(?<!\d)\d{1,2}\s*(?:to|–|-|—)\s*$", before, re.I))
+
+
+def _nice_to_have(jd_body: str, m: re.Match) -> bool:
+    ctx = n(jd_body[max(0, m.start() - 50) : m.end() + 30])
+    return bool(re.search(r"nice to have|preferred|plus\b|bonus", ctx))
+
+
+def _year_limit(title: str) -> int:
+    # Zack 2026-08-18: if the JD explicitly requires 5+ years, skip (Senior title does not override).
+    return 5
 SKIP_COMPANIES = re.compile(r"\bgoogle\b", re.I)
 AGGREGATOR = re.compile(
     r"underdog\.io|sundayy|\bladders\b|jobright|posted\.careers",
@@ -54,9 +74,15 @@ def gate(title: str, company: str, jd: str) -> tuple[bool, str]:
         return False, "Zack: do not apply to Google"
     if AGGREGATOR.search(company or ""):
         return False, f"recruiter marketplace / aggregator: {company}"
-    # Senior/Lead titles are OK. Staff in the title is a skip.
+    # Senior/Lead titles are OK. Staff / Principal in the title is a skip.
     if re.search(r"\bstaff\b", t, re.I):
         return False, f"Staff title: {t}"
+    if re.search(r"\bprincipal\b", t, re.I):
+        return False, f"Principal title: {t}"
+    if re.search(r"\bproduct engineer\b", t, re.I) and not re.search(
+        r"\b(product design engineer|design engineer)\b", t, re.I
+    ):
+        return False, f"physical product engineer, not UX: {t}"
     if not ROLE_OK.search(t) and not re.search(
         r"\b(ux|ui|product engineer|product design|user experience)\b", t, re.I
     ):
@@ -64,22 +90,22 @@ def gate(title: str, company: str, jd: str) -> tuple[bool, str]:
     if PHYSICAL.search(text):
         return False, "physical / industrial designer"
     jd_body = jd or ""
+    limit = _year_limit(t)
     for m in YEARS.finditer(jd_body):
         nyears = int(m.group(1))
-        if nyears < 5 or nyears >= 20:
+        if nyears < limit or nyears >= 20:
             continue  # 25+ company-age marketing is not a YOE knockout
-        ctx = n(jd_body[max(0, m.start() - 50) : m.end() + 30])
-        if re.search(r"nice to have|preferred|plus\b|bonus", ctx):
+        if _in_year_range(jd_body, m) or _nice_to_have(jd_body, m):
             continue
         return False, f"JD minimum years {nyears}+"
     for m in YEARS_OF.finditer(jd_body):
         raw = m.group(1).lower()
         nyears = WORD_YEARS.get(raw) or (int(raw) if raw.isdigit() else 0)
-        if nyears >= 5:
-            ctx = n(jd_body[max(0, m.start() - 50) : m.end() + 20])
-            if re.search(r"nice to have|preferred", ctx):
-                continue
-            return False, f"JD minimum years {nyears}"
+        if nyears < limit:
+            continue
+        if _in_year_range(jd_body, m) or _nice_to_have(jd_body, m):
+            continue
+        return False, f"JD minimum years {nyears}"
     if NO_SPONSOR.search(text):
         return False, "no sponsorship / must already have work auth"
     if re.search(r"public trust|security clearance required|us government client", text, re.I):
