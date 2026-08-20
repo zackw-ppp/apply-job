@@ -160,11 +160,20 @@ def harvest_cards() -> list[dict]:
 
 
 def main() -> int:
-    out_cards = Path("/tmp/li-2026-08-19-cards.json")
-    out_gated = Path("/tmp/li-2026-08-19-gated.json")
-    checkpoint = Path("/tmp/li-2026-08-19-gated-partial.json")
+    import argparse
+    from datetime import date
 
-    if out_cards.exists():
+    p = argparse.ArgumentParser()
+    p.add_argument("--date", default=date.today().isoformat(), help="YYYY-MM-DD")
+    p.add_argument("--force-refresh", action="store_true", help="Ignore card checkpoint")
+    args = p.parse_args()
+    day = args.date
+
+    out_cards = Path(f"/tmp/li-{day}-cards.json")
+    out_gated = Path(f"/tmp/li-{day}-gated.json")
+    checkpoint = Path(f"/tmp/li-{day}-gated-partial.json")
+
+    if out_cards.exists() and not args.force_refresh:
         cards = json.loads(out_cards.read_text())
         print(f"loaded {len(cards)} cards from checkpoint", flush=True)
     else:
@@ -220,7 +229,7 @@ def main() -> int:
             skip_list.append(rec)
 
     result = {
-        "date": "2026-08-19",
+        "date": day,
         "search": SEARCH.format(start=0),
         "total_cards": len(cards),
         "repost_cutoff": cutoff,
@@ -237,6 +246,7 @@ def main() -> int:
     print(
         json.dumps(
             {
+                "date": day,
                 "total": len(cards),
                 "apply": len(apply_list),
                 "skip": len(skip_list),
