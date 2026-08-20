@@ -243,6 +243,22 @@ def main() -> int:
     }
     out_gated.write_text(json.dumps(result, indent=2))
     checkpoint.unlink(missing_ok=True)
+
+    runs = Path("/workspace/job-hunt/runs")
+    runs.mkdir(parents=True, exist_ok=True)
+    write_markdown_report(result, runs / f"{day}-linkedin-us-apply.md")
+    # Slim catalog (no JD body) so URLs + reasons live in the repo
+    slim = {
+        **{k: result[k] for k in (
+            "date", "search", "total_cards", "repost_cutoff",
+            "apply_count", "skip_count", "repost_count",
+        )},
+        "apply": [_slim_row(j) for j in apply_list],
+        "skipped": [_slim_row(j) for j in skip_list],
+        "reposted": [_slim_row(j) for j in repost_list],
+    }
+    (runs / f"{day}-linkedin-catalog.json").write_text(json.dumps(slim, indent=2))
+
     print(
         json.dumps(
             {
@@ -252,10 +268,99 @@ def main() -> int:
                 "skip": len(skip_list),
                 "repost": len(repost_list),
                 "cutoff": cutoff,
+                "report": str(runs / f"{day}-linkedin-us-apply.md"),
             }
         )
     )
     return 0
+
+
+def _slim_row(j: dict) -> dict:
+    return {
+        "jobId": j.get("jobId", ""),
+        "title": j.get("title", ""),
+        "company": j.get("company", ""),
+        "url": j.get("url", ""),
+        "apply": bool(j.get("apply")),
+        "reason": j.get("reason", ""),
+    }
+
+
+def _esc(s: str) -> str:
+    return (s or "").replace("|", "\\|").replace("\n", " ").strip()
+
+
+def write_markdown_report(result: dict, path: Path) -> None:
+    """Full apply + skipped + reposted tables with LinkedIn URLs."""
+    from collections import Counter
+
+    day = result["date"]
+    cutoff = result["repost_cutoff"]
+    lines: list[str] = [
+        f"# Run — {day} LinkedIn US product designer (past 24h)",
+        "",
+        "Search:",
+        "",
+        result["search"],
+        "",
+        f"Script: `job-hunt/helpers/linkedin_scan.py --date {day}`",
+        f"Catalog (no JD body): `job-hunt/runs/{day}-linkedin-catalog.json`",
+        "",
+        "## Inventory",
+        "",
+        "| Metric | Count |",
+        "| --- | --- |",
+        f"| Unique cards | **{result['total_cards']}** |",
+        f"| Gate pass | {result['apply_count']} |",
+        f"| Gate skip | {result['skip_count']} |",
+        f"| Repost heuristic (jobId < P25 **{cutoff}**) | {result['repost_count']} |",
+        "",
+        "## Gate pass — 全部（含原始链接）",
+        "",
+        "| Company | Role | Job ID | Reason | LinkedIn URL |",
+        "| --- | --- | --- | --- | --- |",
+    ]
+    for j in sorted(result["apply"], key=lambda x: int(x["jobId"]), reverse=True):
+        lines.append(
+            f"| {_esc(j['company'])} | {_esc(j['title'])} | {j['jobId']} | "
+            f"{_esc(j.get('reason', ''))} | {j['url']} |"
+        )
+
+    lines += ["", "## Skipped — 原因汇总", "", "| Count | Reason |", "| --- | --- |"]
+    for reason, n in Counter(j.get("reason", "") for j in result["skipped"]).most_common():
+        lines.append(f"| {n} | {_esc(reason)} |")
+
+    lines += [
+        "",
+        f"## Skipped — 全部 {len(result['skipped'])} 条（公司 / 职位 / 原因 / 原始链接）",
+        "",
+        "| Company | Role | Job ID | Why skip | LinkedIn URL |",
+        "| --- | --- | --- | --- | --- |",
+    ]
+    for j in sorted(
+        result["skipped"],
+        key=lambda x: (x.get("reason", ""), x.get("company", ""), x.get("title", "")),
+    ):
+        lines.append(
+            f"| {_esc(j['company'])} | {_esc(j['title'])} | {j['jobId']} | "
+            f"{_esc(j.get('reason', ''))} | {j['url']} |"
+        )
+
+    lines += [
+        "",
+        f"## Reposted — 全部 {len(result['reposted'])} 条（jobId < {cutoff}）",
+        "",
+        "| Company | Role | Job ID | Why skip | LinkedIn URL |",
+        "| --- | --- | --- | --- | --- |",
+    ]
+    for j in sorted(result["reposted"], key=lambda x: int(x["jobId"])):
+        lines.append(
+            f"| {_esc(j['company'])} | {_esc(j['title'])} | {j['jobId']} | "
+            f"{_esc(j.get('reason', ''))} | {j['url']} |"
+        )
+    lines.append("")
+    path.write_text("\n".join(lines))
+    print(f"wrote report {path}", flush=True)
 
 
 if __name__ == "__main__":

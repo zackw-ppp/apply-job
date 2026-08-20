@@ -2,11 +2,15 @@
 
 LinkedIn 美国 **Product Designer** 过去 24h 全量脚本扫描（无 computerUse）。
 
+**原始搜索：**
+https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=product%20designer&geoId=103644278&f_TPR=r86400&start=0
+
 ## 扫描结果
 
 - **370** 张 unique 卡片
-- Repost cutoff：**jobId < 4444187015** → 92 条排除
-- Gate 通过：**29** → 精选优先约 **5** 个直招 + Amazon 1
+- Repost cutoff：**jobId < 4444187015** → **92** 条（全表见 apply 报告）
+- Gate 通过：**29**
+- Gate 跳过：**249**（全表 + 原因 + LinkedIn URL 见下方报告）
 
 ## 新推荐（优先）
 
@@ -18,8 +22,11 @@ LinkedIn 美国 **Product Designer** 过去 24h 全量脚本扫描（无 compute
 
 Amazon AMZL UX Designer II — 投前确认签证：https://www.linkedin.com/jobs/view/ux-designer-ii-amzl-global-standards-customer-excellence-at-amazon-4456415528
 
-## 相对昨日
+## 完整明细（含全部跳过表 + 原始链接）
 
-昨日精选（Tilt / Moritz / Rockstar 等）多数已掉出 24h；Yara 以新 ID 再出现。未自动 Easy Apply（本轮只找岗）。
+→ [`2026-08-20-linkedin-us-apply.md`](./2026-08-20-linkedin-us-apply.md)
 
-完整列表：`runs/2026-08-20-linkedin-us-apply.md`
+该文件包含：
+1. Gate pass 全部行 + LinkedIn URL
+2. Skipped 原因汇总 + **全部 249 条**（公司 / 职位 / Job ID / 原因 / URL）
+3. Reposted **全部 92 条** + URL
