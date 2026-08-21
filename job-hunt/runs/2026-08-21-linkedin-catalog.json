@@ -1,0 +1,2343 @@
+{
+  "date": "2026-08-21",
+  "search": "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=product%20designer&geoId=103644278&f_TPR=r86400&start=0",
+  "total_cards": 291,
+  "repost_cutoff": 4445064391,
+  "apply_count": 35,
+  "skip_count": 184,
+  "repost_count": 72,
+  "apply": [
+    {
+      "jobId": "4447078575",
+      "title": "Product Designer II",
+      "company": "FOX Direct to Consumer",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-ii-at-fox-direct-to-consumer-4447078575",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456036790",
+      "title": "Product Designer UX/UI IRC302942",
+      "company": "GlobalLogic",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-ux-ui-irc302942-at-globallogic-4456036790",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457046625",
+      "title": "Product Designer",
+      "company": "Menlo Security Inc.",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-at-menlo-security-inc-4457046625",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4447278038",
+      "title": "Product Designer",
+      "company": "The Mortgage Office",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-at-the-mortgage-office-4447278038",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457345085",
+      "title": "Senior Product Designer",
+      "company": "Haystack",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-haystack-4457345085",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4447096809",
+      "title": "Senior Product Designer, Growth",
+      "company": "Vercel",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-growth-at-vercel-4447096809",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456255219",
+      "title": "UX Design Lead",
+      "company": "John Deere",
+      "url": "https://www.linkedin.com/jobs/view/ux-design-lead-at-john-deere-4456255219",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456241390",
+      "title": "User Experience Designer",
+      "company": "OSI Engineering",
+      "url": "https://www.linkedin.com/jobs/view/user-experience-designer-at-osi-engineering-4456241390",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457361190",
+      "title": "UI-UX-Programmer",
+      "company": "Maven Workforce Inc.",
+      "url": "https://www.linkedin.com/jobs/view/ui-ux-programmer-at-maven-workforce-inc-4457361190",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457346740",
+      "title": "Lead UX Designer",
+      "company": "VySystems",
+      "url": "https://www.linkedin.com/jobs/view/lead-ux-designer-at-vysystems-4457346740",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457094230",
+      "title": "UX Design - Senior Associate- Commercial Technology & Innovation",
+      "company": "PwC",
+      "url": "https://www.linkedin.com/jobs/view/ux-design-senior-associate-commercial-technology-innovation-at-pwc-4457094230",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457080429",
+      "title": "UX Design - Senior Associate- Commercial Technology & Innovation",
+      "company": "PwC",
+      "url": "https://www.linkedin.com/jobs/view/ux-design-senior-associate-commercial-technology-innovation-at-pwc-4457080429",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457081332",
+      "title": "UX Design - Senior Associate- Commercial Technology & Innovation",
+      "company": "PwC",
+      "url": "https://www.linkedin.com/jobs/view/ux-design-senior-associate-commercial-technology-innovation-at-pwc-4457081332",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457089252",
+      "title": "UX Design - Senior Associate- Commercial Technology & Innovation",
+      "company": "PwC",
+      "url": "https://www.linkedin.com/jobs/view/ux-design-senior-associate-commercial-technology-innovation-at-pwc-4457089252",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457028875",
+      "title": "Senior Design Engineer",
+      "company": "AssemblyAI",
+      "url": "https://www.linkedin.com/jobs/view/senior-design-engineer-at-assemblyai-4457028875",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457017907",
+      "title": "Senior Design Engineer",
+      "company": "AssemblyAI",
+      "url": "https://www.linkedin.com/jobs/view/senior-design-engineer-at-assemblyai-4457017907",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456283232",
+      "title": "Senior Product Designer",
+      "company": "Sony Music Entertainment",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-sony-music-entertainment-4456283232",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456060496",
+      "title": "User Experience Designer",
+      "company": "24 Seven Talent",
+      "url": "https://www.linkedin.com/jobs/view/user-experience-designer-at-24-seven-talent-4456060496",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457316385",
+      "title": "Product Design Engineer I",
+      "company": "MANN+HUMMEL",
+      "url": "https://www.linkedin.com/jobs/view/product-design-engineer-i-at-mann%2Bhummel-4457316385",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457019807",
+      "title": "UI/UX Developer",
+      "company": "Bespoke Technologies, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/ui-ux-developer-at-bespoke-technologies-inc-4457019807",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4454633054",
+      "title": "UX Digital Designer [AQ-14213]",
+      "company": "Aquent",
+      "url": "https://www.linkedin.com/jobs/view/ux-digital-designer-aq-14213-at-aquent-4454633054",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457077786",
+      "title": "UX/UI Designer (Fashion) \u2013 remote freelance",
+      "company": "24 Seven Talent",
+      "url": "https://www.linkedin.com/jobs/view/ux-ui-designer-fashion-%E2%80%93-remote-freelance-at-24-seven-talent-4457077786",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457337029",
+      "title": "UX/UI Designer (Remote)",
+      "company": "Hire Feed",
+      "url": "https://www.linkedin.com/jobs/view/ux-ui-designer-remote-at-hire-feed-4457337029",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457353563",
+      "title": "Senior Design Engineer (P3)",
+      "company": "GE Appliances, a Haier company",
+      "url": "https://www.linkedin.com/jobs/view/senior-design-engineer-p3-at-ge-appliances-a-haier-company-4457353563",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456226104",
+      "title": "Design Engineer",
+      "company": "Sportech",
+      "url": "https://www.linkedin.com/jobs/view/design-engineer-at-sportech-4456226104",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4455562653",
+      "title": "Senior Design Engineer",
+      "company": "Caterpillar Inc.",
+      "url": "https://www.linkedin.com/jobs/view/senior-design-engineer-at-caterpillar-inc-4455562653",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456271557",
+      "title": "Design Engineer",
+      "company": "Rotating Machinery Services, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/design-engineer-at-rotating-machinery-services-inc-4456271557",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456274547",
+      "title": "Design Engineer",
+      "company": "Rotating Machinery Services, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/design-engineer-at-rotating-machinery-services-inc-4456274547",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456287433",
+      "title": "Senior Product Designer",
+      "company": "ROARAI SYSTEMS",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-roarai-systems-4456287433",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456289436",
+      "title": "UX Product Experience Lead",
+      "company": "VOLTO Consulting",
+      "url": "https://www.linkedin.com/jobs/view/ux-product-experience-lead-at-volto-consulting-4456289436",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456295382",
+      "title": "UX Web Designer",
+      "company": "Ready Talent",
+      "url": "https://www.linkedin.com/jobs/view/ux-web-designer-at-ready-talent-4456295382",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456285436",
+      "title": "Lead UX/UI Systems Designer",
+      "company": "Randstad Digital Americas",
+      "url": "https://www.linkedin.com/jobs/view/lead-ux-ui-systems-designer-at-randstad-digital-americas-4456285436",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456045957",
+      "title": "Design Engineer",
+      "company": "Engtal",
+      "url": "https://www.linkedin.com/jobs/view/design-engineer-at-engtal-4456045957",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456230299",
+      "title": "Design Engineer",
+      "company": "KUHN Group",
+      "url": "https://www.linkedin.com/jobs/view/design-engineer-at-kuhn-group-4456230299",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457322622",
+      "title": "Mechanical Product Design Engineer, Data Center Eng, Mech Products and Services",
+      "company": "Amazon Web Services (AWS)",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-product-design-engineer-data-center-eng-mech-products-and-services-at-amazon-web-services-aws-4457322622",
+      "apply": true,
+      "reason": "apply"
+    }
+  ],
+  "skipped": [
+    {
+      "jobId": "4457371801",
+      "title": "Product Design & Innovation Lead",
+      "company": "InventWood",
+      "url": "https://www.linkedin.com/jobs/view/product-design-innovation-lead-at-inventwood-4457371801",
+      "apply": false,
+      "reason": "JD minimum years 5+ (range floor)"
+    },
+    {
+      "jobId": "4456220309",
+      "title": "UX/UI designer (30-80 USD per hour) Fully remote",
+      "company": "Pro Integrate",
+      "url": "https://www.linkedin.com/jobs/view/ux-ui-designer-30-80-usd-per-hour-fully-remote-at-pro-integrate-4456220309",
+      "apply": false,
+      "reason": "JD minimum years 5+"
+    },
+    {
+      "jobId": "4457080640",
+      "title": "Senior Product Designer",
+      "company": "Paraform",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-paraform-4457080640",
+      "apply": false,
+      "reason": "JD minimum years 5+ (range floor)"
+    },
+    {
+      "jobId": "4447040309",
+      "title": "Product Designer",
+      "company": "TCP Software",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-at-tcp-software-4447040309",
+      "apply": false,
+      "reason": "no sponsorship / must already have work auth"
+    },
+    {
+      "jobId": "4445775682",
+      "title": "Sr. UX Designer",
+      "company": "Cognizant",
+      "url": "https://www.linkedin.com/jobs/view/sr-ux-designer-at-cognizant-4445775682",
+      "apply": false,
+      "reason": "no sponsorship / must already have work auth"
+    },
+    {
+      "jobId": "4457390377",
+      "title": "Senior Vice President, Product Design",
+      "company": "BNY",
+      "url": "https://www.linkedin.com/jobs/view/senior-vice-president-product-design-at-bny-4457390377",
+      "apply": false,
+      "reason": "JD minimum years 10+ (range floor)"
+    },
+    {
+      "jobId": "4456281297",
+      "title": "Founding Product Designer",
+      "company": "Ceno",
+      "url": "https://www.linkedin.com/jobs/view/founding-product-designer-at-ceno-4456281297",
+      "apply": false,
+      "reason": "JD minimum years 8+ (range floor)"
+    },
+    {
+      "jobId": "4457390618",
+      "title": "Design Engineer",
+      "company": "RealTruck, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/design-engineer-at-realtruck-inc-4457390618",
+      "apply": false,
+      "reason": "JD minimum years 7+ (range floor)"
+    },
+    {
+      "jobId": "4457510475",
+      "title": "Product Design Manager, Payroll",
+      "company": "Gusto",
+      "url": "https://www.linkedin.com/jobs/view/product-design-manager-payroll-at-gusto-4457510475",
+      "apply": false,
+      "reason": "JD minimum years 8+ (range floor)"
+    },
+    {
+      "jobId": "4454542313",
+      "title": "Product Designer, Connect Risk",
+      "company": "Stripe",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-connect-risk-at-stripe-4454542313",
+      "apply": false,
+      "reason": "JD minimum years 6+"
+    },
+    {
+      "jobId": "4447081828",
+      "title": "Staff Product Designer",
+      "company": "Handshake",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-at-handshake-4447081828",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer"
+    },
+    {
+      "jobId": "4447070665",
+      "title": "Senior Product Designer",
+      "company": "FOX Direct to Consumer",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-fox-direct-to-consumer-4447070665",
+      "apply": false,
+      "reason": "JD minimum years 5+"
+    },
+    {
+      "jobId": "4457395463",
+      "title": "Principal Product Designer",
+      "company": "OutSmart",
+      "url": "https://www.linkedin.com/jobs/view/principal-product-designer-at-outsmart-4457395463",
+      "apply": false,
+      "reason": "Principal title: Principal Product Designer"
+    },
+    {
+      "jobId": "4457051271",
+      "title": "Senior Product Designer, MapMy",
+      "company": "Outside",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-mapmy-at-outside-4457051271",
+      "apply": false,
+      "reason": "JD minimum years 7+"
+    },
+    {
+      "jobId": "4457398167",
+      "title": "Senior Product Designer, Consumer Revenue",
+      "company": "Bessemer Venture Partners India",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-consumer-revenue-at-bessemer-venture-partners-india-4457398167",
+      "apply": false,
+      "reason": "JD minimum years 5+"
+    },
+    {
+      "jobId": "4457093563",
+      "title": "Senior Product Designer",
+      "company": "Community Phone",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-community-phone-4457093563",
+      "apply": false,
+      "reason": "JD minimum years 8+"
+    },
+    {
+      "jobId": "4457032286",
+      "title": "Senior Product Designer, Amazon Autos",
+      "company": "Amazon",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-amazon-autos-at-amazon-4457032286",
+      "apply": false,
+      "reason": "JD minimum years 7+"
+    },
+    {
+      "jobId": "4457392306",
+      "title": "Lead Graphic Designer",
+      "company": "Givelify",
+      "url": "https://www.linkedin.com/jobs/view/lead-graphic-designer-at-givelify-4457392306",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Lead Graphic Designer"
+    },
+    {
+      "jobId": "4457366409",
+      "title": "UX Designer",
+      "company": "Tech Jobs for Good",
+      "url": "https://www.linkedin.com/jobs/view/ux-designer-at-tech-jobs-for-good-4457366409",
+      "apply": false,
+      "reason": "JD minimum years 5+ (range floor)"
+    },
+    {
+      "jobId": "4454605223",
+      "title": "Senior Designer",
+      "company": "Wesan",
+      "url": "https://www.linkedin.com/jobs/view/senior-designer-at-wesan-4454605223",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Designer"
+    },
+    {
+      "jobId": "4456216088",
+      "title": "Visual Designer",
+      "company": "ByteDance",
+      "url": "https://www.linkedin.com/jobs/view/visual-designer-at-bytedance-4456216088",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Visual Designer"
+    },
+    {
+      "jobId": "4457399931",
+      "title": "Experience Designer",
+      "company": "Gundersen Health System",
+      "url": "https://www.linkedin.com/jobs/view/experience-designer-at-gundersen-health-system-4457399931",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Experience Designer"
+    },
+    {
+      "jobId": "4456259191",
+      "title": "UI/UX Designer",
+      "company": "Black Cape",
+      "url": "https://www.linkedin.com/jobs/view/ui-ux-designer-at-black-cape-4456259191",
+      "apply": false,
+      "reason": "no sponsorship / must already have work auth"
+    },
+    {
+      "jobId": "4454656359",
+      "title": "Designer",
+      "company": "BIOWORLD MERCHANDISING",
+      "url": "https://www.linkedin.com/jobs/view/designer-at-bioworld-merchandising-4454656359",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Designer"
+    },
+    {
+      "jobId": "4457388793",
+      "title": "Staff Visual Designer",
+      "company": "LegalZoom",
+      "url": "https://www.linkedin.com/jobs/view/staff-visual-designer-at-legalzoom-4457388793",
+      "apply": false,
+      "reason": "Staff title: Staff Visual Designer"
+    },
+    {
+      "jobId": "4447251006",
+      "title": "User Interface/User Experience Principal - AgentExchange UX",
+      "company": "Salesforce",
+      "url": "https://www.linkedin.com/jobs/view/user-interface-user-experience-principal-agentexchange-ux-at-salesforce-4447251006",
+      "apply": false,
+      "reason": "Principal title: User Interface/User Experience Principal - AgentExchange UX"
+    },
+    {
+      "jobId": "4456294289",
+      "title": "Industrial Designer",
+      "company": "Cubit Capital",
+      "url": "https://www.linkedin.com/jobs/view/industrial-designer-at-cubit-capital-4456294289",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Industrial Designer"
+    },
+    {
+      "jobId": "4454638434",
+      "title": "Senior Product Designer",
+      "company": "SoTalent",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-sotalent-4454638434",
+      "apply": false,
+      "reason": "JD minimum years 6+"
+    },
+    {
+      "jobId": "4453048404",
+      "title": "Industrial Designer (Sim Racing & Simulation Hardware)",
+      "company": "MOZA Racing",
+      "url": "https://www.linkedin.com/jobs/view/industrial-designer-sim-racing-simulation-hardware-at-moza-racing-4453048404",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Industrial Designer (Sim Racing & Simulation Hardware)"
+    },
+    {
+      "jobId": "4445064391",
+      "title": "Senior Experience Design Lead",
+      "company": "Northern Trust",
+      "url": "https://www.linkedin.com/jobs/view/senior-experience-design-lead-at-northern-trust-4445064391",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Experience Design Lead"
+    },
+    {
+      "jobId": "4457306526",
+      "title": "Product Specialist",
+      "company": "MANN+HUMMEL",
+      "url": "https://www.linkedin.com/jobs/view/product-specialist-at-mann%2Bhummel-4457306526",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Specialist"
+    },
+    {
+      "jobId": "4457311560",
+      "title": "Tactical Apparel Designer",
+      "company": "SureFire, LLC.",
+      "url": "https://www.linkedin.com/jobs/view/tactical-apparel-designer-at-surefire-llc-4457311560",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Tactical Apparel Designer"
+    },
+    {
+      "jobId": "4457357811",
+      "title": "Associate Designer, Mens Accessories - Calvin Klein",
+      "company": "Calvin Klein",
+      "url": "https://www.linkedin.com/jobs/view/associate-designer-mens-accessories-calvin-klein-at-calvin-klein-4457357811",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Associate Designer, Mens Accessories - Calvin Klein"
+    },
+    {
+      "jobId": "4457305146",
+      "title": "Sr PD&D Designer Men's All in Motion",
+      "company": "Target",
+      "url": "https://www.linkedin.com/jobs/view/sr-pd-d-designer-men-s-all-in-motion-at-target-4457305146",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Sr PD&D Designer Men's All in Motion"
+    },
+    {
+      "jobId": "4457522123",
+      "title": "Assistant Product Developer - Modular - Data Center",
+      "company": "CUPERTINO ELECTRIC",
+      "url": "https://www.linkedin.com/jobs/view/assistant-product-developer-modular-data-center-at-cupertino-electric-4457522123",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Assistant Product Developer - Modular - Data Center"
+    },
+    {
+      "jobId": "4447258240",
+      "title": "Associate Director, Product Design",
+      "company": "Chewy",
+      "url": "https://www.linkedin.com/jobs/view/associate-director-product-design-at-chewy-4447258240",
+      "apply": false,
+      "reason": "JD minimum years 10+"
+    },
+    {
+      "jobId": "4446924000",
+      "title": "Sr. Men's Designer PFG/PHG",
+      "company": "Columbia Sportswear Company",
+      "url": "https://www.linkedin.com/jobs/view/sr-men-s-designer-pfg-phg-at-columbia-sportswear-company-4446924000",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Sr. Men's Designer PFG/PHG"
+    },
+    {
+      "jobId": "4457349976",
+      "title": "Jr Digital Designer",
+      "company": "Mercury Insurance",
+      "url": "https://www.linkedin.com/jobs/view/jr-digital-designer-at-mercury-insurance-4457349976",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Jr Digital Designer"
+    },
+    {
+      "jobId": "4457029067",
+      "title": "Associate Designer, Denim",
+      "company": "R13",
+      "url": "https://www.linkedin.com/jobs/view/associate-designer-denim-at-r13-4457029067",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Associate Designer, Denim"
+    },
+    {
+      "jobId": "4447214480",
+      "title": "Senior Design Engineer",
+      "company": "GitHub",
+      "url": "https://www.linkedin.com/jobs/view/senior-design-engineer-at-github-4447214480",
+      "apply": false,
+      "reason": "physical / industrial designer"
+    },
+    {
+      "jobId": "4447068133",
+      "title": "Journey & Design Lead - Retirement Plan Solutions",
+      "company": "Lincoln Financial",
+      "url": "https://www.linkedin.com/jobs/view/journey-design-lead-retirement-plan-solutions-at-lincoln-financial-4447068133",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Journey & Design Lead - Retirement Plan Solutions"
+    },
+    {
+      "jobId": "4457382471",
+      "title": "Associate Product Engineer",
+      "company": "Book of the Month",
+      "url": "https://www.linkedin.com/jobs/view/associate-product-engineer-at-book-of-the-month-4457382471",
+      "apply": false,
+      "reason": "physical product engineer, not UX: Associate Product Engineer"
+    },
+    {
+      "jobId": "4457377438",
+      "title": "Principal Designer",
+      "company": "One North",
+      "url": "https://www.linkedin.com/jobs/view/principal-designer-at-one-north-4457377438",
+      "apply": false,
+      "reason": "Principal title: Principal Designer"
+    },
+    {
+      "jobId": "4447065810",
+      "title": "Designer, Digital & Insights",
+      "company": "FTI Consulting",
+      "url": "https://www.linkedin.com/jobs/view/designer-digital-insights-at-fti-consulting-4447065810",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Designer, Digital & Insights"
+    },
+    {
+      "jobId": "4457399487",
+      "title": "Designer",
+      "company": "Open Plan Systems",
+      "url": "https://www.linkedin.com/jobs/view/designer-at-open-plan-systems-4457399487",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Designer"
+    },
+    {
+      "jobId": "4447234132",
+      "title": "Head of Product Design",
+      "company": "Kindred",
+      "url": "https://www.linkedin.com/jobs/view/head-of-product-design-at-kindred-4447234132",
+      "apply": false,
+      "reason": "JD minimum years 12+"
+    },
+    {
+      "jobId": "4457367343",
+      "title": "Designer \u2014 New York City | Jewett Farms + Co.",
+      "company": "Jewett Farms + Co",
+      "url": "https://www.linkedin.com/jobs/view/designer-%E2%80%94-new-york-city-jewett-farms-%2B-co-at-jewett-farms-%2B-co-4457367343",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Designer \u2014 New York City | Jewett Farms + Co."
+    },
+    {
+      "jobId": "4454652152",
+      "title": "Carpet Designer, Philadelphia Commercial",
+      "company": "Philadelphia Commercial",
+      "url": "https://www.linkedin.com/jobs/view/carpet-designer-philadelphia-commercial-at-philadelphia-commercial-4454652152",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Carpet Designer, Philadelphia Commercial"
+    },
+    {
+      "jobId": "4457386475",
+      "title": "CAD Designer",
+      "company": "Horsepower Automotive Group",
+      "url": "https://www.linkedin.com/jobs/view/cad-designer-at-horsepower-automotive-group-4457386475",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: CAD Designer"
+    },
+    {
+      "jobId": "4457038591",
+      "title": "Senior Project Designer",
+      "company": "Wenger Corporation",
+      "url": "https://www.linkedin.com/jobs/view/senior-project-designer-at-wenger-corporation-4457038591",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Project Designer"
+    },
+    {
+      "jobId": "4457385401",
+      "title": "User Experience (UX) Designer - Clearance Required",
+      "company": "LMI",
+      "url": "https://www.linkedin.com/jobs/view/user-experience-ux-designer-clearance-required-at-lmi-4457385401",
+      "apply": false,
+      "reason": "no sponsorship / must already have work auth"
+    },
+    {
+      "jobId": "4455950469",
+      "title": "Senior Interaction Designer",
+      "company": "New York Technology Partners",
+      "url": "https://www.linkedin.com/jobs/view/senior-interaction-designer-at-new-york-technology-partners-4455950469",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Interaction Designer"
+    },
+    {
+      "jobId": "4454138473",
+      "title": "Principal Designer, Product Design",
+      "company": "Cencora",
+      "url": "https://www.linkedin.com/jobs/view/principal-designer-product-design-at-cencora-4454138473",
+      "apply": false,
+      "reason": "Principal title: Principal Designer, Product Design"
+    },
+    {
+      "jobId": "4457507208",
+      "title": "Staff Product Designer",
+      "company": "DAT Freight & Analytics",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-at-dat-freight-analytics-4457507208",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer"
+    },
+    {
+      "jobId": "4456287298",
+      "title": "Accessories Designer",
+      "company": "BIOWORLD MERCHANDISING",
+      "url": "https://www.linkedin.com/jobs/view/accessories-designer-at-bioworld-merchandising-4456287298",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Accessories Designer"
+    },
+    {
+      "jobId": "4457514147",
+      "title": "Human-Centered Design (HCD) Expert",
+      "company": "CGI",
+      "url": "https://www.linkedin.com/jobs/view/human-centered-design-hcd-expert-at-cgi-4457514147",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Human-Centered Design (HCD) Expert"
+    },
+    {
+      "jobId": "4457514241",
+      "title": "CAD / SOLIDWORKS FURNITURE DESIGNER",
+      "company": "TEMPLE FURNITURE | PARKER SOUTHERN",
+      "url": "https://www.linkedin.com/jobs/view/cad-solidworks-furniture-designer-at-temple-furniture-parker-southern-4457514241",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: CAD / SOLIDWORKS FURNITURE DESIGNER"
+    },
+    {
+      "jobId": "4457514382",
+      "title": "Senior Designer, Web & Digital",
+      "company": "Cleo",
+      "url": "https://www.linkedin.com/jobs/view/senior-designer-web-digital-at-cleo-4457514382",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Designer, Web & Digital"
+    },
+    {
+      "jobId": "4447085842",
+      "title": "UX Architect",
+      "company": "Motion Recruitment",
+      "url": "https://www.linkedin.com/jobs/view/ux-architect-at-motion-recruitment-4447085842",
+      "apply": false,
+      "reason": "JD minimum years 7+"
+    },
+    {
+      "jobId": "4446837078",
+      "title": "Senior Design Strategist",
+      "company": "LINK",
+      "url": "https://www.linkedin.com/jobs/view/senior-design-strategist-at-link-4446837078",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Design Strategist"
+    },
+    {
+      "jobId": "4457381975",
+      "title": "VP, Product & Design",
+      "company": "America's Test Kitchen",
+      "url": "https://www.linkedin.com/jobs/view/vp-product-design-at-america-s-test-kitchen-4457381975",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: VP, Product & Design"
+    },
+    {
+      "jobId": "4457357674",
+      "title": "Product Development Assistant",
+      "company": "Rogue Industries",
+      "url": "https://www.linkedin.com/jobs/view/product-development-assistant-at-rogue-industries-4457357674",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Development Assistant"
+    },
+    {
+      "jobId": "4457029460",
+      "title": "Associate Product Developer (On-site)",
+      "company": "Lakeshore Learning Materials",
+      "url": "https://www.linkedin.com/jobs/view/associate-product-developer-on-site-at-lakeshore-learning-materials-4457029460",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Associate Product Developer (On-site)"
+    },
+    {
+      "jobId": "4457388435",
+      "title": "Assistant Designer",
+      "company": "Banana Republic",
+      "url": "https://www.linkedin.com/jobs/view/assistant-designer-at-banana-republic-4457388435",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Assistant Designer"
+    },
+    {
+      "jobId": "4454159272",
+      "title": "Sr Designer",
+      "company": "RENK America",
+      "url": "https://www.linkedin.com/jobs/view/sr-designer-at-renk-america-4454159272",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Sr Designer"
+    },
+    {
+      "jobId": "4456275846",
+      "title": "High Jewelry Designer",
+      "company": "Lorraine Schwartz",
+      "url": "https://www.linkedin.com/jobs/view/high-jewelry-designer-at-lorraine-schwartz-4456275846",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: High Jewelry Designer"
+    },
+    {
+      "jobId": "4457315760",
+      "title": "Industrial Designer III, Prime Air Expansion",
+      "company": "Amazon",
+      "url": "https://www.linkedin.com/jobs/view/industrial-designer-iii-prime-air-expansion-at-amazon-4457315760",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Industrial Designer III, Prime Air Expansion"
+    },
+    {
+      "jobId": "4454600897",
+      "title": "Webflow Web Designer",
+      "company": "RedBalloon",
+      "url": "https://www.linkedin.com/jobs/view/webflow-web-designer-at-redballoon-4454600897",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Webflow Web Designer"
+    },
+    {
+      "jobId": "4456253987",
+      "title": "Associate Production Designer",
+      "company": "F. Schumacher & Co.",
+      "url": "https://www.linkedin.com/jobs/view/associate-production-designer-at-f-schumacher-co-4456253987",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Associate Production Designer"
+    },
+    {
+      "jobId": "4447041376",
+      "title": "R&D Product Design Engineer (CREO) II",
+      "company": "TE Connectivity",
+      "url": "https://www.linkedin.com/jobs/view/r-d-product-design-engineer-creo-ii-at-te-connectivity-4447041376",
+      "apply": false,
+      "reason": "no sponsorship / must already have work auth"
+    },
+    {
+      "jobId": "4456271140",
+      "title": "Design Engineers - multiple job openings; Trevor, WI and Fortville, IN",
+      "company": "A Hiring Company",
+      "url": "https://www.linkedin.com/jobs/view/design-engineers-multiple-job-openings-trevor-wi-and-fortville-in-at-a-hiring-company-4456271140",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Design Engineers - multiple job openings; Trevor, WI and Fortville, IN"
+    },
+    {
+      "jobId": "4457503176",
+      "title": "Designer (Dallas, TX)",
+      "company": "ONEOK",
+      "url": "https://www.linkedin.com/jobs/view/designer-dallas-tx-at-oneok-4457503176",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Designer (Dallas, TX)"
+    },
+    {
+      "jobId": "4446411913",
+      "title": "Software Engineer - Product",
+      "company": "Authentic",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-product-at-authentic-4446411913",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Software Engineer - Product"
+    },
+    {
+      "jobId": "4457348879",
+      "title": "Engineer I",
+      "company": "Hendrickson",
+      "url": "https://www.linkedin.com/jobs/view/engineer-i-at-hendrickson-4457348879",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Engineer I"
+    },
+    {
+      "jobId": "4454153708",
+      "title": "Senior Manager, Product Design - Design Platform",
+      "company": "Upstart",
+      "url": "https://www.linkedin.com/jobs/view/senior-manager-product-design-design-platform-at-upstart-4454153708",
+      "apply": false,
+      "reason": "JD minimum years 8+"
+    },
+    {
+      "jobId": "4457346931",
+      "title": "RCI-FB-72397-1 Mechanical/Product Design Engineer (Battery)- Sunnyvale, CA",
+      "company": "Rangam",
+      "url": "https://www.linkedin.com/jobs/view/rci-fb-72397-1-mechanical-product-design-engineer-battery-sunnyvale-ca-at-rangam-4457346931",
+      "apply": false,
+      "reason": "JD minimum years 6+"
+    },
+    {
+      "jobId": "4454656007",
+      "title": "Generative Design Associate",
+      "company": "Coframe",
+      "url": "https://www.linkedin.com/jobs/view/generative-design-associate-at-coframe-4454656007",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Generative Design Associate"
+    },
+    {
+      "jobId": "4454661280",
+      "title": "Product Engineer",
+      "company": "USA Rare Earth, Inc. (Nasdaq: USAR)",
+      "url": "https://www.linkedin.com/jobs/view/product-engineer-at-usa-rare-earth-inc-nasdaq-usar-4454661280",
+      "apply": false,
+      "reason": "physical product engineer, not UX: Product Engineer"
+    },
+    {
+      "jobId": "4454651351",
+      "title": "Mechanical Designer",
+      "company": "Jobot",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-designer-at-jobot-4454651351",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Mechanical Designer"
+    },
+    {
+      "jobId": "4448442260",
+      "title": "Product Engineer",
+      "company": "Aalberts integrated piping systems",
+      "url": "https://www.linkedin.com/jobs/view/product-engineer-at-aalberts-integrated-piping-systems-4448442260",
+      "apply": false,
+      "reason": "physical product engineer, not UX: Product Engineer"
+    },
+    {
+      "jobId": "4457361150",
+      "title": "Lead Textile Designer",
+      "company": "EnVogue International",
+      "url": "https://www.linkedin.com/jobs/view/lead-textile-designer-at-envogue-international-4457361150",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Lead Textile Designer"
+    },
+    {
+      "jobId": "4456263316",
+      "title": "Design Engineer",
+      "company": "Five Star Fabricating, Inc",
+      "url": "https://www.linkedin.com/jobs/view/design-engineer-at-five-star-fabricating-inc-4456263316",
+      "apply": false,
+      "reason": "JD minimum years 40"
+    },
+    {
+      "jobId": "4457013533",
+      "title": "Sentinel - Human Factors Engineer / Principal Engineer - 19441",
+      "company": "Northrop Grumman",
+      "url": "https://www.linkedin.com/jobs/view/sentinel-human-factors-engineer-principal-engineer-19441-at-northrop-grumman-4457013533",
+      "apply": false,
+      "reason": "Principal title: Sentinel - Human Factors Engineer / Principal Engineer - 19441"
+    },
+    {
+      "jobId": "4457372381",
+      "title": "Product Developer \u2013 Soft Goods & Tech Bags",
+      "company": "Velvet Caviar",
+      "url": "https://www.linkedin.com/jobs/view/product-developer-%E2%80%93-soft-goods-tech-bags-at-velvet-caviar-4457372381",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Developer \u2013 Soft Goods & Tech Bags"
+    },
+    {
+      "jobId": "4457387499",
+      "title": "Prototype Software Development",
+      "company": "MIT Lincoln Laboratory",
+      "url": "https://www.linkedin.com/jobs/view/prototype-software-development-at-mit-lincoln-laboratory-4457387499",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Prototype Software Development"
+    },
+    {
+      "jobId": "4447254640",
+      "title": "Senior Product Design Manager",
+      "company": "Fivetran",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-design-manager-at-fivetran-4447254640",
+      "apply": false,
+      "reason": "JD minimum years 8+"
+    },
+    {
+      "jobId": "4456279194",
+      "title": "Product Development Engineer",
+      "company": "The Pond Guy",
+      "url": "https://www.linkedin.com/jobs/view/product-development-engineer-at-the-pond-guy-4456279194",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Development Engineer"
+    },
+    {
+      "jobId": "4447213108",
+      "title": "New Product Development Engineer - Leeds, AL",
+      "company": "Hubbell Incorporated",
+      "url": "https://www.linkedin.com/jobs/view/new-product-development-engineer-leeds-al-at-hubbell-incorporated-4447213108",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: New Product Development Engineer - Leeds, AL"
+    },
+    {
+      "jobId": "4457360725",
+      "title": "Product Development Engineer - Mechanical",
+      "company": "Stanley Black & Decker, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/product-development-engineer-mechanical-at-stanley-black-decker-inc-4457360725",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Development Engineer - Mechanical"
+    },
+    {
+      "jobId": "4456252370",
+      "title": "Graphic Designer",
+      "company": "Felt Right",
+      "url": "https://www.linkedin.com/jobs/view/graphic-designer-at-felt-right-4456252370",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Graphic Designer"
+    },
+    {
+      "jobId": "4456054002",
+      "title": "Designer",
+      "company": "Creative Office Resources",
+      "url": "https://www.linkedin.com/jobs/view/designer-at-creative-office-resources-4456054002",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Designer"
+    },
+    {
+      "jobId": "4456070668",
+      "title": "Senior Director, UX, YouTube Emerging Experience and Community",
+      "company": "Google",
+      "url": "https://www.linkedin.com/jobs/view/senior-director-ux-youtube-emerging-experience-and-community-at-google-4456070668",
+      "apply": false,
+      "reason": "Zack: do not apply to Google"
+    },
+    {
+      "jobId": "4457523091",
+      "title": "Senior Brand Designer, Experiential",
+      "company": "Stripe",
+      "url": "https://www.linkedin.com/jobs/view/senior-brand-designer-experiential-at-stripe-4457523091",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Brand Designer, Experiential"
+    },
+    {
+      "jobId": "4451927367",
+      "title": "Executive Design Director, Innovation Experience Design",
+      "company": "Lenovo",
+      "url": "https://www.linkedin.com/jobs/view/executive-design-director-innovation-experience-design-at-lenovo-4451927367",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Executive Design Director, Innovation Experience Design"
+    },
+    {
+      "jobId": "4447146250",
+      "title": "Designer II",
+      "company": "Smith Seckman Reid, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/designer-ii-at-smith-seckman-reid-inc-4447146250",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Designer II"
+    },
+    {
+      "jobId": "4457516127",
+      "title": "Senior Brand Designer, Experiential",
+      "company": "Stripe",
+      "url": "https://www.linkedin.com/jobs/view/senior-brand-designer-experiential-at-stripe-4457516127",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Brand Designer, Experiential"
+    },
+    {
+      "jobId": "4447066067",
+      "title": "Sr. Specialist, Design (Designer/Drafter) 1",
+      "company": "L3Harris Technologies",
+      "url": "https://www.linkedin.com/jobs/view/sr-specialist-design-designer-drafter-1-at-l3harris-technologies-4447066067",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Sr. Specialist, Design (Designer/Drafter) 1"
+    },
+    {
+      "jobId": "4456286059",
+      "title": "UI/UX Developer",
+      "company": "Reuben Cooley Inc.",
+      "url": "https://www.linkedin.com/jobs/view/ui-ux-developer-at-reuben-cooley-inc-4456286059",
+      "apply": false,
+      "reason": "JD minimum years 8+"
+    },
+    {
+      "jobId": "4456264682",
+      "title": "Product Development Manager",
+      "company": "Dimond Connect",
+      "url": "https://www.linkedin.com/jobs/view/product-development-manager-at-dimond-connect-4456264682",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Development Manager"
+    },
+    {
+      "jobId": "4446789674",
+      "title": "Innovations Engineer Intern",
+      "company": "Micro-LAM, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/innovations-engineer-intern-at-micro-lam-inc-4446789674",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Innovations Engineer Intern"
+    },
+    {
+      "jobId": "4454651945",
+      "title": "Digital/Technical Product Manager Senior",
+      "company": "USAA",
+      "url": "https://www.linkedin.com/jobs/view/digital-technical-product-manager-senior-at-usaa-4454651945",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Digital/Technical Product Manager Senior"
+    },
+    {
+      "jobId": "4457395841",
+      "title": "Research & Development Engineer",
+      "company": "Dee Zee, Inc",
+      "url": "https://www.linkedin.com/jobs/view/research-development-engineer-at-dee-zee-inc-4457395841",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Research & Development Engineer"
+    },
+    {
+      "jobId": "4457301365",
+      "title": "Lead Developer, Kids Chuck Global - Converse",
+      "company": "Converse",
+      "url": "https://www.linkedin.com/jobs/view/lead-developer-kids-chuck-global-converse-at-converse-4457301365",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Lead Developer, Kids Chuck Global - Converse"
+    },
+    {
+      "jobId": "4456444700",
+      "title": "Senior Product Developer, Promo Footwear, Global Jordan",
+      "company": "Nike",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-developer-promo-footwear-global-jordan-at-nike-4456444700",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Product Developer, Promo Footwear, Global Jordan"
+    },
+    {
+      "jobId": "4457089642",
+      "title": "Engineer Design Technician - Relocate to Warroad, MN",
+      "company": "Marvin",
+      "url": "https://www.linkedin.com/jobs/view/engineer-design-technician-relocate-to-warroad-mn-at-marvin-4457089642",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Engineer Design Technician - Relocate to Warroad, MN"
+    },
+    {
+      "jobId": "4452594569",
+      "title": "Product Engineer",
+      "company": "Philips Recruiting Services / Philips Automotive Recruiting",
+      "url": "https://www.linkedin.com/jobs/view/product-engineer-at-philips-recruiting-services-philips-automotive-recruiting-4452594569",
+      "apply": false,
+      "reason": "physical product engineer, not UX: Product Engineer"
+    },
+    {
+      "jobId": "4446798948",
+      "title": "Product Manager, Site Experience",
+      "company": "Kontoor Brands, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/product-manager-site-experience-at-kontoor-brands-inc-4446798948",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Manager, Site Experience"
+    },
+    {
+      "jobId": "4457391681",
+      "title": "Principal Engineer, R&D,",
+      "company": "Baxter International Inc.",
+      "url": "https://www.linkedin.com/jobs/view/principal-engineer-r-d-at-baxter-international-inc-4457391681",
+      "apply": false,
+      "reason": "Principal title: Principal Engineer, R&D,"
+    },
+    {
+      "jobId": "4457382746",
+      "title": "Sr Specialist - User Research Operations,",
+      "company": "Baxter International Inc.",
+      "url": "https://www.linkedin.com/jobs/view/sr-specialist-user-research-operations-at-baxter-international-inc-4457382746",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Sr Specialist - User Research Operations,"
+    },
+    {
+      "jobId": "4457083106",
+      "title": "Senior Device Development Engineer (Project Leadership)",
+      "company": "BioSpace",
+      "url": "https://www.linkedin.com/jobs/view/senior-device-development-engineer-project-leadership-at-biospace-4457083106",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Device Development Engineer (Project Leadership)"
+    },
+    {
+      "jobId": "4445186468",
+      "title": "Senior Design Engineer",
+      "company": "MAU Workforce Solutions",
+      "url": "https://www.linkedin.com/jobs/view/senior-design-engineer-at-mau-workforce-solutions-4445186468",
+      "apply": false,
+      "reason": "JD minimum years 5+"
+    },
+    {
+      "jobId": "4455451896",
+      "title": "Cabinet Designer / Sales",
+      "company": "Cabinets Northwest",
+      "url": "https://www.linkedin.com/jobs/view/cabinet-designer-sales-at-cabinets-northwest-4455451896",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Cabinet Designer / Sales"
+    },
+    {
+      "jobId": "4454137776",
+      "title": "Interior Designer",
+      "company": "La-Z-Boy Incorporated",
+      "url": "https://www.linkedin.com/jobs/view/interior-designer-at-la-z-boy-incorporated-4454137776",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Interior Designer"
+    },
+    {
+      "jobId": "4454163884",
+      "title": "Technical Manager Footwear Prototyping",
+      "company": "adidas",
+      "url": "https://www.linkedin.com/jobs/view/technical-manager-footwear-prototyping-at-adidas-4454163884",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Technical Manager Footwear Prototyping"
+    },
+    {
+      "jobId": "4446765003",
+      "title": "Graphic Designer",
+      "company": "Sanofi",
+      "url": "https://www.linkedin.com/jobs/view/graphic-designer-at-sanofi-4446765003",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Graphic Designer"
+    },
+    {
+      "jobId": "4454656078",
+      "title": "Mechanical Engineer",
+      "company": "Applied Materials",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-engineer-at-applied-materials-4454656078",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Mechanical Engineer"
+    },
+    {
+      "jobId": "4456024153",
+      "title": "Kitchen Designer",
+      "company": "The Home Depot",
+      "url": "https://www.linkedin.com/jobs/view/kitchen-designer-at-the-home-depot-4456024153",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Kitchen Designer"
+    },
+    {
+      "jobId": "4456283502",
+      "title": "Senior Experience Designer \u2013 Web/IVA",
+      "company": "EVERSANA INTOUCH",
+      "url": "https://www.linkedin.com/jobs/view/senior-experience-designer-%E2%80%93-web-iva-at-eversana-intouch-4456283502",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Experience Designer \u2013 Web/IVA"
+    },
+    {
+      "jobId": "4457524360",
+      "title": "User Experience Designer",
+      "company": "Arkhya Tech. Inc.",
+      "url": "https://www.linkedin.com/jobs/view/user-experience-designer-at-arkhya-tech-inc-4457524360",
+      "apply": false,
+      "reason": "JD minimum years 7+"
+    },
+    {
+      "jobId": "4457504627",
+      "title": "Design Release Engineer - Bumper, Grille, Fascia, and Exterior Trim",
+      "company": "General Motors",
+      "url": "https://www.linkedin.com/jobs/view/design-release-engineer-bumper-grille-fascia-and-exterior-trim-at-general-motors-4457504627",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Design Release Engineer - Bumper, Grille, Fascia, and Exterior Trim"
+    },
+    {
+      "jobId": "4454658975",
+      "title": "Customer Experience Strategist",
+      "company": "The Judge Group",
+      "url": "https://www.linkedin.com/jobs/view/customer-experience-strategist-at-the-judge-group-4454658975",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Customer Experience Strategist"
+    },
+    {
+      "jobId": "4456068262",
+      "title": "Mechanical Engineer III",
+      "company": "Nomad Global Communication Solutions",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-engineer-iii-at-nomad-global-communication-solutions-4456068262",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Mechanical Engineer III"
+    },
+    {
+      "jobId": "4457390959",
+      "title": "Product Integration & Applications Engineering Lead",
+      "company": "Blue Bird Corporation",
+      "url": "https://www.linkedin.com/jobs/view/product-integration-applications-engineering-lead-at-blue-bird-corporation-4457390959",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Integration & Applications Engineering Lead"
+    },
+    {
+      "jobId": "4456069368",
+      "title": "Mechanical Engineer III",
+      "company": "Insight Global",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-engineer-iii-at-insight-global-4456069368",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Mechanical Engineer III"
+    },
+    {
+      "jobId": "4454154055",
+      "title": "Product Coordinator/Sr Product Coordinator, Technology Products",
+      "company": "American Airlines",
+      "url": "https://www.linkedin.com/jobs/view/product-coordinator-sr-product-coordinator-technology-products-at-american-airlines-4454154055",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Coordinator/Sr Product Coordinator, Technology Products"
+    },
+    {
+      "jobId": "4457378692",
+      "title": "Mens Activewear Designer",
+      "company": "Castlewood Apparel Corp.",
+      "url": "https://www.linkedin.com/jobs/view/mens-activewear-designer-at-castlewood-apparel-corp-4457378692",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Mens Activewear Designer"
+    },
+    {
+      "jobId": "4447060932",
+      "title": "Specialist, Tool Design Engineer",
+      "company": "L3Harris Technologies",
+      "url": "https://www.linkedin.com/jobs/view/specialist-tool-design-engineer-at-l3harris-technologies-4447060932",
+      "apply": false,
+      "reason": "no sponsorship / must already have work auth"
+    },
+    {
+      "jobId": "4454669651",
+      "title": "Product Manager",
+      "company": "Tradeify",
+      "url": "https://www.linkedin.com/jobs/view/product-manager-at-tradeify-4454669651",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Manager"
+    },
+    {
+      "jobId": "4446913369",
+      "title": "Lead Hardware Design Engineer, sUAS",
+      "company": "COLSA",
+      "url": "https://www.linkedin.com/jobs/view/lead-hardware-design-engineer-suas-at-colsa-4446913369",
+      "apply": false,
+      "reason": "physical / industrial designer"
+    },
+    {
+      "jobId": "4457093055",
+      "title": "Associate Product Analyst",
+      "company": "Merck",
+      "url": "https://www.linkedin.com/jobs/view/associate-product-analyst-at-merck-4457093055",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Associate Product Analyst"
+    },
+    {
+      "jobId": "4457377899",
+      "title": "Design Director",
+      "company": "EnVogue International",
+      "url": "https://www.linkedin.com/jobs/view/design-director-at-envogue-international-4457377899",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Design Director"
+    },
+    {
+      "jobId": "4457518152",
+      "title": "Senior Visual Designer",
+      "company": "Verify App",
+      "url": "https://www.linkedin.com/jobs/view/senior-visual-designer-at-verify-app-4457518152",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Visual Designer"
+    },
+    {
+      "jobId": "4457500725",
+      "title": "Designer",
+      "company": "Actalent",
+      "url": "https://www.linkedin.com/jobs/view/designer-at-actalent-4457500725",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Designer"
+    },
+    {
+      "jobId": "4454409833",
+      "title": "Graphic Designer \u2013 Navy Interactive Multimedia Instruction (IMI)",
+      "company": "Lyntris",
+      "url": "https://www.linkedin.com/jobs/view/graphic-designer-%E2%80%93-navy-interactive-multimedia-instruction-imi-at-lyntris-4454409833",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Graphic Designer \u2013 Navy Interactive Multimedia Instruction (IMI)"
+    },
+    {
+      "jobId": "4456051423",
+      "title": "Product Manager",
+      "company": "CarMax",
+      "url": "https://www.linkedin.com/jobs/view/product-manager-at-carmax-4456051423",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Manager"
+    },
+    {
+      "jobId": "4457048276",
+      "title": "Senior R&D Engineer I-II",
+      "company": "Hollister Incorporated",
+      "url": "https://www.linkedin.com/jobs/view/senior-r-d-engineer-i-ii-at-hollister-incorporated-4457048276",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior R&D Engineer I-II"
+    },
+    {
+      "jobId": "4445086351",
+      "title": "Member of Technical Staff for Product Engineering",
+      "company": "ECLARO",
+      "url": "https://www.linkedin.com/jobs/view/member-of-technical-staff-for-product-engineering-at-eclaro-4445086351",
+      "apply": false,
+      "reason": "Staff title: Member of Technical Staff for Product Engineering"
+    },
+    {
+      "jobId": "4457500071",
+      "title": "Engineer Design I",
+      "company": "Toshiba International Corporation",
+      "url": "https://www.linkedin.com/jobs/view/engineer-design-i-at-toshiba-international-corporation-4457500071",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Engineer Design I"
+    },
+    {
+      "jobId": "4457525403",
+      "title": "Mechanical Engineer I, Avionics Test Engineering",
+      "company": "Collins Aerospace",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-engineer-i-avionics-test-engineering-at-collins-aerospace-4457525403",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Mechanical Engineer I, Avionics Test Engineering"
+    },
+    {
+      "jobId": "4454627224",
+      "title": "System Engineer",
+      "company": "Super Micro Computer Spain, S.L.",
+      "url": "https://www.linkedin.com/jobs/view/system-engineer-at-super-micro-computer-spain-s-l-4454627224",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: System Engineer"
+    },
+    {
+      "jobId": "4457015403",
+      "title": "Frontend Developer",
+      "company": "V Group Inc.",
+      "url": "https://www.linkedin.com/jobs/view/frontend-developer-at-v-group-inc-4457015403",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Frontend Developer"
+    },
+    {
+      "jobId": "4456271805",
+      "title": "Product Intern",
+      "company": "Day0 Labs",
+      "url": "https://www.linkedin.com/jobs/view/product-intern-at-day0-labs-4456271805",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Intern"
+    },
+    {
+      "jobId": "4457313723",
+      "title": "Sr. Mechanical Product Engineer, Data Center Eng, MPS",
+      "company": "Amazon Web Services (AWS)",
+      "url": "https://www.linkedin.com/jobs/view/sr-mechanical-product-engineer-data-center-eng-mps-at-amazon-web-services-aws-4457313723",
+      "apply": false,
+      "reason": "physical product engineer, not UX: Sr. Mechanical Product Engineer, Data Center Eng, MPS"
+    },
+    {
+      "jobId": "4454645386",
+      "title": "Website Product & Project Manager",
+      "company": "The McAlear Group",
+      "url": "https://www.linkedin.com/jobs/view/website-product-project-manager-at-the-mcalear-group-4454645386",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Website Product & Project Manager"
+    },
+    {
+      "jobId": "4447278958",
+      "title": "Senior Product Associate",
+      "company": "JPMorganChase",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-associate-at-jpmorganchase-4447278958",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Product Associate"
+    },
+    {
+      "jobId": "4457008526",
+      "title": "Product Analyst",
+      "company": "Hollstadt Consulting",
+      "url": "https://www.linkedin.com/jobs/view/product-analyst-at-hollstadt-consulting-4457008526",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Analyst"
+    },
+    {
+      "jobId": "4457320445",
+      "title": "Designer (Mechanical) II - Remote",
+      "company": "Torentify",
+      "url": "https://www.linkedin.com/jobs/view/designer-mechanical-ii-remote-at-torentify-4457320445",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Designer (Mechanical) II - Remote"
+    },
+    {
+      "jobId": "4454906438",
+      "title": "PCB Designer",
+      "company": "Veridian Tech Solutions, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/pcb-designer-at-veridian-tech-solutions-inc-4454906438",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: PCB Designer"
+    },
+    {
+      "jobId": "4446534200",
+      "title": "Creative Director, Interactive Digital Experiences",
+      "company": "Monks",
+      "url": "https://www.linkedin.com/jobs/view/creative-director-interactive-digital-experiences-at-monks-4446534200",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Creative Director, Interactive Digital Experiences"
+    },
+    {
+      "jobId": "4456236000",
+      "title": "Production Artist",
+      "company": "Robert Half",
+      "url": "https://www.linkedin.com/jobs/view/production-artist-at-robert-half-4456236000",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Production Artist"
+    },
+    {
+      "jobId": "4446964546",
+      "title": "Mechanical Engineer",
+      "company": "Banner Engineering",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-engineer-at-banner-engineering-4446964546",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Mechanical Engineer"
+    },
+    {
+      "jobId": "4454639044",
+      "title": "Senior Designer- Retail [AQ-14226]",
+      "company": "Aquent",
+      "url": "https://www.linkedin.com/jobs/view/senior-designer-retail-aq-14226-at-aquent-4454639044",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Designer- Retail [AQ-14226]"
+    },
+    {
+      "jobId": "4447223088",
+      "title": "Engineer- Sinks Product Group",
+      "company": "Zurn Elkay Water Solutions",
+      "url": "https://www.linkedin.com/jobs/view/engineer-sinks-product-group-at-zurn-elkay-water-solutions-4447223088",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Engineer- Sinks Product Group"
+    },
+    {
+      "jobId": "4450279294",
+      "title": "Interior Designer | Commercial Furniture",
+      "company": "Bespoke Careers",
+      "url": "https://www.linkedin.com/jobs/view/interior-designer-commercial-furniture-at-bespoke-careers-4450279294",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Interior Designer | Commercial Furniture"
+    },
+    {
+      "jobId": "4449024406",
+      "title": "Expert Manager, Product Management & Innovation",
+      "company": "Bain & Company",
+      "url": "https://www.linkedin.com/jobs/view/expert-manager-product-management-innovation-at-bain-company-4449024406",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Expert Manager, Product Management & Innovation"
+    },
+    {
+      "jobId": "4454662061",
+      "title": "Product Builder",
+      "company": "Camunda",
+      "url": "https://www.linkedin.com/jobs/view/product-builder-at-camunda-4454662061",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Builder"
+    },
+    {
+      "jobId": "4456274549",
+      "title": "Mechanical Engineer",
+      "company": "Harvey Nash",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-engineer-at-harvey-nash-4456274549",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Mechanical Engineer"
+    },
+    {
+      "jobId": "4452567313",
+      "title": "Design Coordinator",
+      "company": "HGA",
+      "url": "https://www.linkedin.com/jobs/view/design-coordinator-at-hga-4452567313",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Design Coordinator"
+    },
+    {
+      "jobId": "4457333621",
+      "title": "Design Consultant - Lexington Area",
+      "company": "Closet Factory",
+      "url": "https://www.linkedin.com/jobs/view/design-consultant-lexington-area-at-closet-factory-4457333621",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Design Consultant - Lexington Area"
+    },
+    {
+      "jobId": "4456053208",
+      "title": "Sr. Mechanical Engineer",
+      "company": "Ember LifeSciences",
+      "url": "https://www.linkedin.com/jobs/view/sr-mechanical-engineer-at-ember-lifesciences-4456053208",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Sr. Mechanical Engineer"
+    },
+    {
+      "jobId": "4454628666",
+      "title": "Mechanical Designer (#10820TB)",
+      "company": "Searchmasters Inc",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-designer-%2310820tb-at-searchmasters-inc-4454628666",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Mechanical Designer (#10820TB)"
+    },
+    {
+      "jobId": "4445959543",
+      "title": "Senior / Staff Product Engineer",
+      "company": "People In AI",
+      "url": "https://www.linkedin.com/jobs/view/senior-staff-product-engineer-at-people-in-ai-4445959543",
+      "apply": false,
+      "reason": "Staff title: Senior / Staff Product Engineer"
+    },
+    {
+      "jobId": "4457379733",
+      "title": "AD, Graphic Design & Digital Content",
+      "company": "EPM Scientific",
+      "url": "https://www.linkedin.com/jobs/view/ad-graphic-design-digital-content-at-epm-scientific-4457379733",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: AD, Graphic Design & Digital Content"
+    },
+    {
+      "jobId": "4456245105",
+      "title": "Sr. UX Researcher, AFT - Experience Design",
+      "company": "UXR Hunt",
+      "url": "https://www.linkedin.com/jobs/view/sr-ux-researcher-aft-experience-design-at-uxr-hunt-4456245105",
+      "apply": false,
+      "reason": "JD minimum years 5+"
+    },
+    {
+      "jobId": "4457338430",
+      "title": "Technical Designer",
+      "company": "Haddad Brands",
+      "url": "https://www.linkedin.com/jobs/view/technical-designer-at-haddad-brands-4457338430",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Technical Designer"
+    },
+    {
+      "jobId": "4457016505",
+      "title": "Mechanical Design Engineer - Level 2 / Level 3",
+      "company": "Northrop Grumman",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-design-engineer-level-2-level-3-at-northrop-grumman-4457016505",
+      "apply": false,
+      "reason": "physical / industrial designer"
+    },
+    {
+      "jobId": "4457385260",
+      "title": "Apparel Graphic Designer",
+      "company": "True Religion",
+      "url": "https://www.linkedin.com/jobs/view/apparel-graphic-designer-at-true-religion-4457385260",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Apparel Graphic Designer"
+    },
+    {
+      "jobId": "4456069449",
+      "title": "Interior Designer",
+      "company": "Wendi Gee Interiors",
+      "url": "https://www.linkedin.com/jobs/view/interior-designer-at-wendi-gee-interiors-4456069449",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Interior Designer"
+    },
+    {
+      "jobId": "4446903735",
+      "title": "Senior Staff UX Engineer, Cloud AI",
+      "company": "Google",
+      "url": "https://www.linkedin.com/jobs/view/senior-staff-ux-engineer-cloud-ai-at-google-4446903735",
+      "apply": false,
+      "reason": "Zack: do not apply to Google"
+    },
+    {
+      "jobId": "4457366328",
+      "title": "Product Developer, Tabletop and Games",
+      "company": "Warren James",
+      "url": "https://www.linkedin.com/jobs/view/product-developer-tabletop-and-games-at-warren-james-4457366328",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Developer, Tabletop and Games"
+    },
+    {
+      "jobId": "4456065403",
+      "title": "SENIOR GRAPHICS DESIGNER - DIGITAL & MULTIMEDIA",
+      "company": "Studio City",
+      "url": "https://www.linkedin.com/jobs/view/senior-graphics-designer-digital-multimedia-at-studio-city-4456065403",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: SENIOR GRAPHICS DESIGNER - DIGITAL & MULTIMEDIA"
+    },
+    {
+      "jobId": "4452734927",
+      "title": "Apparel Print & Pattern Designer",
+      "company": "Pendleton Woolen Mills",
+      "url": "https://www.linkedin.com/jobs/view/apparel-print-pattern-designer-at-pendleton-woolen-mills-4452734927",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Apparel Print & Pattern Designer"
+    },
+    {
+      "jobId": "4454660059",
+      "title": "Mechanical Engineer",
+      "company": "Applied Materials",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-engineer-at-applied-materials-4454660059",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Mechanical Engineer"
+    },
+    {
+      "jobId": "4457019466",
+      "title": "ENGINEER II",
+      "company": "Govan Engineering, LLC",
+      "url": "https://www.linkedin.com/jobs/view/engineer-ii-at-govan-engineering-llc-4457019466",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: ENGINEER II"
+    },
+    {
+      "jobId": "4456075039",
+      "title": "Product Development Manager \u2013 Walmart Channel (USA)",
+      "company": "Alpha Fashion Group",
+      "url": "https://www.linkedin.com/jobs/view/product-development-manager-%E2%80%93-walmart-channel-usa-at-alpha-fashion-group-4456075039",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Development Manager \u2013 Walmart Channel (USA)"
+    },
+    {
+      "jobId": "4457389846",
+      "title": "Natural Gas Designer - 100% Remote",
+      "company": "Actalent",
+      "url": "https://www.linkedin.com/jobs/view/natural-gas-designer-100%25-remote-at-actalent-4457389846",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Natural Gas Designer - 100% Remote"
+    },
+    {
+      "jobId": "4457026235",
+      "title": "Senior Design Producer, Web & App",
+      "company": "General Motors",
+      "url": "https://www.linkedin.com/jobs/view/senior-design-producer-web-app-at-general-motors-4457026235",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Design Producer, Web & App"
+    },
+    {
+      "jobId": "4447282845",
+      "title": "Product Designer L2/Senior Product Designer - Trip Marketing (Bangkok - Based, Relocation Provided)",
+      "company": "Agoda",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-l2-senior-product-designer-trip-marketing-bangkok-based-relocation-provided-at-agoda-4447282845",
+      "apply": false,
+      "reason": "JD minimum years 6+"
+    },
+    {
+      "jobId": "4446740408",
+      "title": "HVAC Designer",
+      "company": "Jobot",
+      "url": "https://www.linkedin.com/jobs/view/hvac-designer-at-jobot-4446740408",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: HVAC Designer"
+    },
+    {
+      "jobId": "4447292036",
+      "title": "Product Designer L2/Senior Product Designer - Trip Marketing (Bangkok - Based, Relocation Provided)",
+      "company": "Agoda",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-l2-senior-product-designer-trip-marketing-bangkok-based-relocation-provided-at-agoda-4447292036",
+      "apply": false,
+      "reason": "JD minimum years 6+"
+    },
+    {
+      "jobId": "4447270967",
+      "title": "Product Designer L2/Senior Product Designer - Trip Marketing (Bangkok - Based, Relocation Provided)",
+      "company": "Agoda",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-l2-senior-product-designer-trip-marketing-bangkok-based-relocation-provided-at-agoda-4447270967",
+      "apply": false,
+      "reason": "JD minimum years 6+"
+    },
+    {
+      "jobId": "4447058242",
+      "title": "Instrumentation & Control Designer (Data Centers)",
+      "company": "Jacobs",
+      "url": "https://www.linkedin.com/jobs/view/instrumentation-control-designer-data-centers-at-jacobs-4447058242",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Instrumentation & Control Designer (Data Centers)"
+    },
+    {
+      "jobId": "4457394260",
+      "title": "Art Director",
+      "company": "Darktrace",
+      "url": "https://www.linkedin.com/jobs/view/art-director-at-darktrace-4457394260",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Art Director"
+    },
+    {
+      "jobId": "4447056241",
+      "title": "Instrumentation & Control Designer (Data Centers)",
+      "company": "Jacobs",
+      "url": "https://www.linkedin.com/jobs/view/instrumentation-control-designer-data-centers-at-jacobs-4447056241",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Instrumentation & Control Designer (Data Centers)"
+    }
+  ],
+  "reposted": [
+    {
+      "jobId": "4379129958",
+      "title": "Staff Product Designer",
+      "company": "Faire",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-at-faire-4379129958",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4438501649",
+      "title": "Product Designer",
+      "company": "Confido",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-at-confido-4438501649",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4408480325",
+      "title": "Senior Product Designer, Education",
+      "company": "Hinge Health",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-education-at-hinge-health-4408480325",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4379150012",
+      "title": "Staff Product Designer",
+      "company": "Faire",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-at-faire-4379150012",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4429741208",
+      "title": "Product Design Lead, Finance",
+      "company": "Rippling",
+      "url": "https://www.linkedin.com/jobs/view/product-design-lead-finance-at-rippling-4429741208",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4254873309",
+      "title": "Product Designer",
+      "company": "Meta",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-at-meta-4254873309",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4430176948",
+      "title": "Product Designer, Human Interface",
+      "company": "Meta",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-human-interface-at-meta-4430176948",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4408445923",
+      "title": "Senior / Staff Product Designer",
+      "company": "Suno",
+      "url": "https://www.linkedin.com/jobs/view/senior-staff-product-designer-at-suno-4408445923",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4418403053",
+      "title": "Product Designer",
+      "company": "Arcade.dev",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-at-arcade-dev-4418403053",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4399635350",
+      "title": "Senior Product Designer",
+      "company": "Life.Church",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-life-church-4399635350",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4429046263",
+      "title": "Principal Product Designer, Business Intelligence for QuickBooks and Mid-Market",
+      "company": "Intuit",
+      "url": "https://www.linkedin.com/jobs/view/principal-product-designer-business-intelligence-for-quickbooks-and-mid-market-at-intuit-4429046263",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4430155577",
+      "title": "Product Designer \u2013 Kansas City (Hybrid)",
+      "company": "Littler",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-%E2%80%93-kansas-city-hybrid-at-littler-4430155577",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4434887233",
+      "title": "Forward-Deployed Product Designer - FDPSD (US Remote)",
+      "company": "Tailor",
+      "url": "https://www.linkedin.com/jobs/view/forward-deployed-product-designer-fdpsd-us-remote-at-tailor-4434887233",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4413818624",
+      "title": "UX Designer",
+      "company": "Avis Budget Group",
+      "url": "https://www.linkedin.com/jobs/view/ux-designer-at-avis-budget-group-4413818624",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4420443787",
+      "title": "Product Design Lead",
+      "company": "DualEntry",
+      "url": "https://www.linkedin.com/jobs/view/product-design-lead-at-dualentry-4420443787",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4306619643",
+      "title": "User Experience Designer",
+      "company": "Epic",
+      "url": "https://www.linkedin.com/jobs/view/user-experience-designer-at-epic-4306619643",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4427380351",
+      "title": "AI Prototyping Expert (UI/UX)",
+      "company": "Xsolla",
+      "url": "https://www.linkedin.com/jobs/view/ai-prototyping-expert-ui-ux-at-xsolla-4427380351",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4445049110",
+      "title": "Sr. UX Designer",
+      "company": "IntePros",
+      "url": "https://www.linkedin.com/jobs/view/sr-ux-designer-at-intepros-4445049110",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4430150447",
+      "title": "Product Designer - Personal Care/Wellness",
+      "company": "SBH Fashion",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-personal-care-wellness-at-sbh-fashion-4430150447",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4445041590",
+      "title": "Senior Principal Product Designer",
+      "company": "Okta",
+      "url": "https://www.linkedin.com/jobs/view/senior-principal-product-designer-at-okta-4445041590",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4408101490",
+      "title": "Staff Product Designer, Merchant Marketing",
+      "company": "DoorDash",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-merchant-marketing-at-doordash-4408101490",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4435914099",
+      "title": "Staff Product Designer, AI Interaction Design",
+      "company": "Spring Health",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-ai-interaction-design-at-spring-health-4435914099",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4442263010",
+      "title": "Software Experience Prototyper",
+      "company": "Lenovo",
+      "url": "https://www.linkedin.com/jobs/view/software-experience-prototyper-at-lenovo-4442263010",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4432698537",
+      "title": "Product Design Assistant",
+      "company": "BAGGU",
+      "url": "https://www.linkedin.com/jobs/view/product-design-assistant-at-baggu-4432698537",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4438299745",
+      "title": "Design Engineer",
+      "company": "Ramp",
+      "url": "https://www.linkedin.com/jobs/view/design-engineer-at-ramp-4438299745",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4437927024",
+      "title": "Design Systems Lead",
+      "company": "Pebl",
+      "url": "https://www.linkedin.com/jobs/view/design-systems-lead-at-pebl-4437927024",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4438516260",
+      "title": "Designer",
+      "company": "Pentair",
+      "url": "https://www.linkedin.com/jobs/view/designer-at-pentair-4438516260",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4430119831",
+      "title": "Design System Designer",
+      "company": "General Motors",
+      "url": "https://www.linkedin.com/jobs/view/design-system-designer-at-general-motors-4430119831",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4429788646",
+      "title": "CAD Designer III",
+      "company": "Daikin Applied Americas",
+      "url": "https://www.linkedin.com/jobs/view/cad-designer-iii-at-daikin-applied-americas-4429788646",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4408103469",
+      "title": "Staff Product Designer, Merchant Marketing",
+      "company": "DoorDash",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-merchant-marketing-at-doordash-4408103469",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4305420640",
+      "title": "User Experience Designer",
+      "company": "Epic",
+      "url": "https://www.linkedin.com/jobs/view/user-experience-designer-at-epic-4305420640",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4418505394",
+      "title": "Staff Product Engineer - Americas",
+      "company": "Ashby",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-engineer-americas-at-ashby-4418505394",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4401768772",
+      "title": "Sr. Director of Design, Identity & Trust",
+      "company": "PayPal",
+      "url": "https://www.linkedin.com/jobs/view/sr-director-of-design-identity-trust-at-paypal-4401768772",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4440452183",
+      "title": "Digital Designer",
+      "company": "Biorce",
+      "url": "https://www.linkedin.com/jobs/view/digital-designer-at-biorce-4440452183",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4439117635",
+      "title": "Industrial Designer, Contract-to-Hire",
+      "company": "IDEO",
+      "url": "https://www.linkedin.com/jobs/view/industrial-designer-contract-to-hire-at-ideo-4439117635",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4435911976",
+      "title": "CAD Designer III - New Glenn",
+      "company": "Blue Origin",
+      "url": "https://www.linkedin.com/jobs/view/cad-designer-iii-new-glenn-at-blue-origin-4435911976",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4431537040",
+      "title": "Product Architect",
+      "company": "Annapolis Micro Systems",
+      "url": "https://www.linkedin.com/jobs/view/product-architect-at-annapolis-micro-systems-4431537040",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4419977686",
+      "title": "Designer II",
+      "company": "Perkins&Will",
+      "url": "https://www.linkedin.com/jobs/view/designer-ii-at-perkins-will-4419977686",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4380173893",
+      "title": "Design Engineer",
+      "company": "Justrite Safety Group",
+      "url": "https://www.linkedin.com/jobs/view/design-engineer-at-justrite-safety-group-4380173893",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4363055797",
+      "title": "Senior Product Development Engineer",
+      "company": "Molex",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-development-engineer-at-molex-4363055797",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4429994537",
+      "title": "Senior Design Engineer",
+      "company": "Patagonia",
+      "url": "https://www.linkedin.com/jobs/view/senior-design-engineer-at-patagonia-4429994537",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4435696150",
+      "title": "Associate Apparel Designer - A&F Womens Swim",
+      "company": "Abercrombie & Fitch Co.",
+      "url": "https://www.linkedin.com/jobs/view/associate-apparel-designer-a-f-womens-swim-at-abercrombie-fitch-co-4435696150",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4440495321",
+      "title": "Frontend Engineer",
+      "company": "Coinflow",
+      "url": "https://www.linkedin.com/jobs/view/frontend-engineer-at-coinflow-4440495321",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4438653453",
+      "title": "Packaging Design Engineer",
+      "company": "ESPO Corporation",
+      "url": "https://www.linkedin.com/jobs/view/packaging-design-engineer-at-espo-corporation-4438653453",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4427832535",
+      "title": "Mechanical Development Engineer, Design",
+      "company": "Ingersoll Rand",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-development-engineer-design-at-ingersoll-rand-4427832535",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4438676574",
+      "title": "Product Analyst, Digital Assets - Wealth Management & Trading Solutions (Hybrid - NYC)",
+      "company": "Broadridge",
+      "url": "https://www.linkedin.com/jobs/view/product-analyst-digital-assets-wealth-management-trading-solutions-hybrid-nyc-at-broadridge-4438676574",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4347101919",
+      "title": "Project Engineer, Development",
+      "company": "Globus Medical",
+      "url": "https://www.linkedin.com/jobs/view/project-engineer-development-at-globus-medical-4347101919",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4414999032",
+      "title": "AI Artist",
+      "company": "OpusClip",
+      "url": "https://www.linkedin.com/jobs/view/ai-artist-at-opusclip-4414999032",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4416317879",
+      "title": "Designer",
+      "company": "Saatchi X",
+      "url": "https://www.linkedin.com/jobs/view/designer-at-saatchi-x-4416317879",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4438845100",
+      "title": "Product Engineering Intern - Manufacturing Systems & Fixture Design",
+      "company": "Quantum Design",
+      "url": "https://www.linkedin.com/jobs/view/product-engineering-intern-manufacturing-systems-fixture-design-at-quantum-design-4438845100",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4438642613",
+      "title": "Senior Associate, Product Management - Upmarket Card Team",
+      "company": "Capital One",
+      "url": "https://www.linkedin.com/jobs/view/senior-associate-product-management-upmarket-card-team-at-capital-one-4438642613",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4430766147",
+      "title": "Specialist, Engineering - Mechanical Engineering",
+      "company": "Southwire Company",
+      "url": "https://www.linkedin.com/jobs/view/specialist-engineering-mechanical-engineering-at-southwire-company-4430766147",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4445050081",
+      "title": "Digital Technical Product Manager Senior \u2013 Life Company Digital eCommerce Acquisition",
+      "company": "USAA",
+      "url": "https://www.linkedin.com/jobs/view/digital-technical-product-manager-senior-%E2%80%93-life-company-digital-ecommerce-acquisition-at-usaa-4445050081",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4380580558",
+      "title": "Sr. UX Researcher - ArcGIS Apps",
+      "company": "Esri",
+      "url": "https://www.linkedin.com/jobs/view/sr-ux-researcher-arcgis-apps-at-esri-4380580558",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4440799279",
+      "title": "Senior Director, Product Design",
+      "company": "Bentley Systems",
+      "url": "https://www.linkedin.com/jobs/view/senior-director-product-design-at-bentley-systems-4440799279",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4438268339",
+      "title": "Product Line Leader \u2013 Curing",
+      "company": "Afinitas",
+      "url": "https://www.linkedin.com/jobs/view/product-line-leader-%E2%80%93-curing-at-afinitas-4438268339",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4430122294",
+      "title": "Design Release Engineer - Base Engine Components",
+      "company": "SEGULA Technologies",
+      "url": "https://www.linkedin.com/jobs/view/design-release-engineer-base-engine-components-at-segula-technologies-4430122294",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4419450550",
+      "title": "AI Product Engineer, Evidence",
+      "company": "Drata",
+      "url": "https://www.linkedin.com/jobs/view/ai-product-engineer-evidence-at-drata-4419450550",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4430126942",
+      "title": "Mechanical Design Engineer",
+      "company": "AAON, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/mechanical-design-engineer-at-aaon-inc-4430126942",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4418236224",
+      "title": "Senior Technical Designer, Apparel",
+      "company": "Quince",
+      "url": "https://www.linkedin.com/jobs/view/senior-technical-designer-apparel-at-quince-4418236224",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4418541348",
+      "title": "Senior Mechanical Engineer - Advanced Surgical",
+      "company": "CONMED Corporation",
+      "url": "https://www.linkedin.com/jobs/view/senior-mechanical-engineer-advanced-surgical-at-conmed-corporation-4418541348",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4419494981",
+      "title": "AI Conversation Designer",
+      "company": "Checkr, Inc.",
+      "url": "https://www.linkedin.com/jobs/view/ai-conversation-designer-at-checkr-inc-4419494981",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4429350059",
+      "title": "Designer | Architecture",
+      "company": "BHDP Architecture",
+      "url": "https://www.linkedin.com/jobs/view/designer-architecture-at-bhdp-architecture-4429350059",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4423535865",
+      "title": "Senior Designer, Ready-to-Wear Runway",
+      "company": "TORY BURCH",
+      "url": "https://www.linkedin.com/jobs/view/senior-designer-ready-to-wear-runway-at-tory-burch-4423535865",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4389763870",
+      "title": "Lead Product Engineer",
+      "company": "MANN+HUMMEL",
+      "url": "https://www.linkedin.com/jobs/view/lead-product-engineer-at-mann%2Bhummel-4389763870",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4438691722",
+      "title": "Sr. Design Professional",
+      "company": "HOK",
+      "url": "https://www.linkedin.com/jobs/view/sr-design-professional-at-hok-4438691722",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4411820909",
+      "title": "Instrumentation Designer",
+      "company": "CB&I",
+      "url": "https://www.linkedin.com/jobs/view/instrumentation-designer-at-cb-i-4411820909",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4413946265",
+      "title": "Senior Durable Tooling Designer (On-site)",
+      "company": "Pratt & Whitney",
+      "url": "https://www.linkedin.com/jobs/view/senior-durable-tooling-designer-on-site-at-pratt-whitney-4413946265",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4438650676",
+      "title": "Packaging Design Engineer",
+      "company": "ESPO Corporation",
+      "url": "https://www.linkedin.com/jobs/view/packaging-design-engineer-at-espo-corporation-4438650676",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4437937154",
+      "title": "Manager, Product",
+      "company": "TELUS Digital",
+      "url": "https://www.linkedin.com/jobs/view/manager-product-at-telus-digital-4437937154",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4434718174",
+      "title": "Power Module Design Architect: $300K+ and Equity",
+      "company": "IC Resources",
+      "url": "https://www.linkedin.com/jobs/view/power-module-design-architect-%24300k%2B-and-equity-at-ic-resources-4434718174",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    },
+    {
+      "jobId": "4445058944",
+      "title": "BIM Designer",
+      "company": "Jobot",
+      "url": "https://www.linkedin.com/jobs/view/bim-designer-at-jobot-4445058944",
+      "apply": false,
+      "reason": "repost heuristic (id<4445064391)"
+    }
+  ]
+}

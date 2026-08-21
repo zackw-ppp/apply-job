@@ -25,7 +25,9 @@ PHYSICAL = re.compile(
 )
 NO_SPONSOR = re.compile(
     r"(will not sponsor|no sponsorship|not eligible for visa sponsorship|"
-    r"cannot sponsor|must be eligible to lawfully work|"
+    r"cannot sponsor|not able to sponsor|unable to sponsor|"
+    r"not able to offer.{0,40}sponsorship|"
+    r"must be eligible to lawfully work|"
     r"required to be eligible to lawfully work|"
     r"authorized to work.{0,60}without sponsorship|"
     r"\bu\.?s\.? person\b|u\.?s\.? citizen|citizenship required|"
@@ -36,6 +38,11 @@ YEARS = re.compile(r"(?<!\d)(\d{1,2})\+\s*(?:years?|yrs?)", re.I)
 YEARS_OF = re.compile(
     r"(?:over\s+)?(\d+|five|six|seven|eight|nine|ten)\s+years?\s+"
     r"(?:of\s+)?(?:progressively |dedicated )?(?:experience|product design|ux)",
+    re.I,
+)
+# Floor of ranges like "5-8 years" / "5 to 10 years" / "8–10+ years"
+YEARS_RANGE = re.compile(
+    r"(?<!\d)(\d{1,2})\s*(?:to|–|-|—)\s*\d{1,2}\+?\s*(?:years?|yrs?)",
     re.I,
 )
 WORD_YEARS = {"five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
@@ -49,8 +56,17 @@ def _in_year_range(jd_body: str, m: re.Match) -> bool:
 
 
 def _nice_to_have(jd_body: str, m: re.Match) -> bool:
-    ctx = n(jd_body[max(0, m.start() - 50) : m.end() + 30])
-    return bool(re.search(r"nice to have|preferred|plus\b|bonus", ctx))
+    """Only soft-req YOE like '5+ years preferred', not 'Preferred Qualifications: 5+'."""
+    after = n(jd_body[m.end() : m.end() + 40])
+    before = n(jd_body[max(0, m.start() - 35) : m.start()])
+    if re.search(r"^(?:years?|yrs?)?\s*(?:preferred|a plus|nice to have|is a plus|bonus)", after):
+        return True
+    if re.search(r"(nice to have|bonus|plus)[:\s]*$", before):
+        return True
+    # "preferred 5+ years" — but not "Preferred Qualifications" section headers
+    if re.search(r"preferred\s*$", before) and not re.search(r"qualifications?\s*$", before):
+        return True
+    return False
 
 
 def _year_limit(title: str) -> int:
@@ -106,6 +122,13 @@ def gate(title: str, company: str, jd: str) -> tuple[bool, str]:
         if _in_year_range(jd_body, m) or _nice_to_have(jd_body, m):
             continue
         return False, f"JD minimum years {nyears}"
+    for m in YEARS_RANGE.finditer(jd_body):
+        nyears = int(m.group(1))
+        if nyears < limit or nyears >= 20:
+            continue
+        if _nice_to_have(jd_body, m):
+            continue
+        return False, f"JD minimum years {nyears}+ (range floor)"
     if NO_SPONSOR.search(text):
         return False, "no sponsorship / must already have work auth"
     if re.search(r"public trust|security clearance required|us government client", text, re.I):
