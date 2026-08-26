@@ -29,7 +29,8 @@ NO_SPONSOR = re.compile(
     r"not able to offer.{0,40}sponsorship|"
     r"must be eligible to lawfully work|"
     r"required to be eligible to lawfully work|"
-    r"authorized to work.{0,60}without sponsorship|"
+    r"authorized to work.{0,80}without (the need for )?(employer )?sponsorship|"
+    r"without the need for employer sponsorship|"
     r"\bu\.?s\.? person\b|u\.?s\.? citizen|citizenship required|"
     r"must have (current )?(us )?work authorization)",
     re.I,
@@ -45,6 +46,7 @@ YEARS_RANGE = re.compile(
     r"(?<!\d)(\d{1,2})\s*(?:to|–|-|—)\s*\d{1,2}\+?\s*(?:years?|yrs?)",
     re.I,
 )
+AT_LEAST_YEARS = re.compile(r"at least\s+(\d{1,2})\s+years?", re.I)
 WORD_YEARS = {"five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
 SENIOR_TITLE = re.compile(r"\b(senior|lead|principal)\b", re.I)
 
@@ -129,6 +131,13 @@ def gate(title: str, company: str, jd: str) -> tuple[bool, str]:
         if _nice_to_have(jd_body, m):
             continue
         return False, f"JD minimum years {nyears}+ (range floor)"
+    for m in AT_LEAST_YEARS.finditer(jd_body):
+        nyears = int(m.group(1))
+        if nyears < limit or nyears >= 20:
+            continue
+        if _nice_to_have(jd_body, m):
+            continue
+        return False, f"JD minimum years {nyears}+ (at least)"
     if NO_SPONSOR.search(text):
         return False, "no sponsorship / must already have work auth"
     if re.search(r"public trust|security clearance required|us government client", text, re.I):
