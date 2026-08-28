@@ -47,8 +47,9 @@ YEARS_RANGE = re.compile(
     re.I,
 )
 AT_LEAST_YEARS = re.compile(
-    r"(?:at least|minimum of|minimum)\s+(\d{1,2})\s+years?|"
-    r"(\d{1,2})\s+years?\s+or\s+more",
+    r"(?:at least|minimum of|minimum|more than|over)\s+(\d{1,2})\s+years?|"
+    r"(\d{1,2})\s+years?\s+or\s+more|"
+    r"(?:bachelor|ba|bs)\+?\s*(\d{1,2})\s+years?",
     re.I,
 )
 WORD_YEARS = {"five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
@@ -136,7 +137,7 @@ def gate(title: str, company: str, jd: str) -> tuple[bool, str]:
             continue
         return False, f"JD minimum years {nyears}+ (range floor)"
     for m in AT_LEAST_YEARS.finditer(jd_body):
-        nyears = int(m.group(1) or m.group(2))
+        nyears = int(next(g for g in m.groups() if g))
         if nyears < limit or nyears >= 20:
             continue
         if _nice_to_have(jd_body, m):
