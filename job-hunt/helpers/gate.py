@@ -26,7 +26,7 @@ PHYSICAL = re.compile(
 NO_SPONSOR = re.compile(
     r"(will not sponsor|no sponsorship|not eligible for visa sponsorship|"
     r"cannot sponsor|not able to sponsor|unable to sponsor|"
-    r"not able to offer.{0,40}sponsorship|"
+    r"unable to provide sponsorship|not able to offer.{0,40}sponsorship|"
     r"must be eligible to lawfully work|"
     r"required to be eligible to lawfully work|"
     r"authorized to work.{0,80}without (the need for )?(employer )?sponsorship|"
@@ -46,7 +46,11 @@ YEARS_RANGE = re.compile(
     r"(?<!\d)(\d{1,2})\s*(?:to|–|-|—)\s*\d{1,2}\+?\s*(?:years?|yrs?)",
     re.I,
 )
-AT_LEAST_YEARS = re.compile(r"at least\s+(\d{1,2})\s+years?", re.I)
+AT_LEAST_YEARS = re.compile(
+    r"(?:at least|minimum of|minimum)\s+(\d{1,2})\s+years?|"
+    r"(\d{1,2})\s+years?\s+or\s+more",
+    re.I,
+)
 WORD_YEARS = {"five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
 SENIOR_TITLE = re.compile(r"\b(senior|lead|principal)\b", re.I)
 
@@ -132,7 +136,7 @@ def gate(title: str, company: str, jd: str) -> tuple[bool, str]:
             continue
         return False, f"JD minimum years {nyears}+ (range floor)"
     for m in AT_LEAST_YEARS.finditer(jd_body):
-        nyears = int(m.group(1))
+        nyears = int(m.group(1) or m.group(2))
         if nyears < limit or nyears >= 20:
             continue
         if _nice_to_have(jd_body, m):
