@@ -29,8 +29,8 @@ NO_SPONSOR = re.compile(
     r"unable to provide sponsorship|not able to offer.{0,40}sponsorship|"
     r"must be eligible to lawfully work|"
     r"required to be eligible to lawfully work|"
-    r"authorized to work.{0,80}without (the need for )?(employer )?sponsorship|"
-    r"without the need for employer sponsorship|"
+    r"authorized to work.{0,80}without (the need for |the need of )?(employer )?sponsorship|"
+    r"without the need (?:for|of) employer sponsorship|"
     r"\bu\.?s\.? person\b|u\.?s\.? citizen|citizenship required|"
     r"must have (current )?(us )?work authorization)",
     re.I,
