@@ -27,6 +27,7 @@ NO_SPONSOR = re.compile(
     r"(will not sponsor|no sponsorship|not eligible for visa sponsorship|"
     r"cannot sponsor|not able to sponsor|unable to sponsor|"
     r"unable to provide sponsorship|not able to offer.{0,40}sponsorship|"
+    r"visa sponsorship is not available|sponsorship is not available|"
     r"must be eligible to lawfully work|"
     r"required to be eligible to lawfully work|"
     r"authorized to work.{0,80}without (the need for |the need of )?(employer )?sponsorship|"
@@ -38,7 +39,7 @@ NO_SPONSOR = re.compile(
 YEARS = re.compile(r"(?<!\d)(\d{1,2})\+\s*(?:years?|yrs?)", re.I)
 YEARS_OF = re.compile(
     r"(?:over\s+)?(\d+|five|six|seven|eight|nine|ten)\s+years?\s+"
-    r"(?:of\s+)?(?:progressively |dedicated )?(?:experience|product design|ux)",
+    r"(?:of\s+)?(?:progressively |dedicated |relevant )?(?:experience|product design|ux)",
     re.I,
 )
 # Floor of ranges like "5-8 years" / "5 to 10 years" / "8–10+ years"
@@ -63,12 +64,13 @@ def _in_year_range(jd_body: str, m: re.Match) -> bool:
 
 
 def _nice_to_have(jd_body: str, m: re.Match) -> bool:
-    """Only soft-req YOE like '5+ years preferred', not 'Preferred Qualifications: 5+'."""
+    """Only soft-req YOE like '5+ years preferred / a plus', not earlier 'degree a plus'."""
     after = n(jd_body[m.end() : m.end() + 40])
     before = n(jd_body[max(0, m.start() - 35) : m.start()])
+    # Soft only when the qualifier is attached after the YOE number
     if re.search(r"^(?:years?|yrs?)?\s*(?:preferred|a plus|nice to have|is a plus|bonus)", after):
         return True
-    if re.search(r"(nice to have|bonus|plus)[:\s]*$", before):
+    if re.search(r"(nice to have)[:\s]*$", before):
         return True
     # "preferred 5+ years" — but not "Preferred Qualifications" section headers
     if re.search(r"preferred\s*$", before) and not re.search(r"qualifications?\s*$", before):
