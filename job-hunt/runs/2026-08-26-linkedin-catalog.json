@@ -1,0 +1,775 @@
+{
+  "date": "2026-08-26",
+  "search": "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=product%20designer&geoId=103644278&f_TPR=r86400&start=0",
+  "total_cards": 95,
+  "repost_cutoff": 4440078775,
+  "apply_count": 14,
+  "skip_count": 58,
+  "repost_count": 23,
+  "apply": [
+    {
+      "jobId": "4456947225",
+      "title": "Product Designer (Growth)",
+      "company": "Tailscale",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-growth-at-tailscale-4456947225",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457643549",
+      "title": "Associate, UX Designer \u2013 Equity Zen",
+      "company": "Morgan Stanley",
+      "url": "https://www.linkedin.com/jobs/view/associate-ux-designer-%E2%80%93-equity-zen-at-morgan-stanley-4457643549",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4447570269",
+      "title": "Design Engineer",
+      "company": "Warp",
+      "url": "https://www.linkedin.com/jobs/view/design-engineer-at-warp-4447570269",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4448249558",
+      "title": "Product Designer, Growth",
+      "company": "Discord",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-growth-at-discord-4448249558",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456947988",
+      "title": "Senior Product Designer \u2013 UX/UI (W2 Only)",
+      "company": "Miracle Software Systems, Inc",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-%E2%80%93-ux-ui-w2-only-at-miracle-software-systems-inc-4456947988",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4459133218",
+      "title": "Brand & Product Designer",
+      "company": "Seven Stars",
+      "url": "https://www.linkedin.com/jobs/view/brand-product-designer-at-seven-stars-4459133218",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4456952163",
+      "title": "UX/UI Engineer",
+      "company": "Cloud and Things",
+      "url": "https://www.linkedin.com/jobs/view/ux-ui-engineer-at-cloud-and-things-4456952163",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457668792",
+      "title": "SR UX DESIGNER",
+      "company": "AutoZone",
+      "url": "https://www.linkedin.com/jobs/view/sr-ux-designer-at-autozone-4457668792",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457494790",
+      "title": "UI Design Engineer",
+      "company": "Neuralink",
+      "url": "https://www.linkedin.com/jobs/view/ui-design-engineer-at-neuralink-4457494790",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457636973",
+      "title": "Product Design Engineer",
+      "company": "Retractable Technologies, Inc",
+      "url": "https://www.linkedin.com/jobs/view/product-design-engineer-at-retractable-technologies-inc-4457636973",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457669011",
+      "title": "Director of Product Design",
+      "company": "Replit",
+      "url": "https://www.linkedin.com/jobs/view/director-of-product-design-at-replit-4457669011",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4458299494",
+      "title": "UX Designer",
+      "company": "University of Michigan",
+      "url": "https://www.linkedin.com/jobs/view/ux-designer-at-university-of-michigan-4458299494",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457914242",
+      "title": "Mobile Game UX Designer",
+      "company": "Counterspell Games Studio",
+      "url": "https://www.linkedin.com/jobs/view/mobile-game-ux-designer-at-counterspell-games-studio-4457914242",
+      "apply": true,
+      "reason": "apply"
+    },
+    {
+      "jobId": "4457241082",
+      "title": "UI/UX Specialist",
+      "company": "Technatomy Corporation",
+      "url": "https://www.linkedin.com/jobs/view/ui-ux-specialist-at-technatomy-corporation-4457241082",
+      "apply": true,
+      "reason": "apply"
+    }
+  ],
+  "skipped": [
+    {
+      "jobId": "4459042275",
+      "title": "Senior Product Designer, New Ventures",
+      "company": "GameChanger",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-new-ventures-at-gamechanger-4459042275",
+      "apply": false,
+      "reason": "JD minimum years 5+ (at least)"
+    },
+    {
+      "jobId": "4459094025",
+      "title": "Delivery Consultant, UX Design",
+      "company": "Deloitte",
+      "url": "https://www.linkedin.com/jobs/view/delivery-consultant-ux-design-at-deloitte-4459094025",
+      "apply": false,
+      "reason": "no sponsorship / must already have work auth"
+    },
+    {
+      "jobId": "4454542313",
+      "title": "Product Designer, Connect Risk",
+      "company": "Stripe",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-connect-risk-at-stripe-4454542313",
+      "apply": false,
+      "reason": "JD minimum years 6+"
+    },
+    {
+      "jobId": "4446622342",
+      "title": "Staff Product Designer, T0 (Agentic) Finance",
+      "company": "Airwallex",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-t0-agentic-finance-at-airwallex-4446622342",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, T0 (Agentic) Finance"
+    },
+    {
+      "jobId": "4457661960",
+      "title": "Staff Product Designer, SevenRooms",
+      "company": "DoorDash",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-sevenrooms-at-doordash-4457661960",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, SevenRooms"
+    },
+    {
+      "jobId": "4448245785",
+      "title": "Sr Staff Product Designer, GenStudio & Firefly Enterprise",
+      "company": "Adobe",
+      "url": "https://www.linkedin.com/jobs/view/sr-staff-product-designer-genstudio-firefly-enterprise-at-adobe-4448245785",
+      "apply": false,
+      "reason": "Staff title: Sr Staff Product Designer, GenStudio & Firefly Enterprise"
+    },
+    {
+      "jobId": "4448242914",
+      "title": "Staff Product Designer, Adobe Express",
+      "company": "Adobe",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-adobe-express-at-adobe-4448242914",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Adobe Express"
+    },
+    {
+      "jobId": "4446623556",
+      "title": "Product Designer, Meta Superintelligence Labs",
+      "company": "Meta",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-meta-superintelligence-labs-at-meta-4446623556",
+      "apply": false,
+      "reason": "JD minimum years 8+"
+    },
+    {
+      "jobId": "4446281244",
+      "title": "Staff AI UX Product Designer",
+      "company": "LegalZoom",
+      "url": "https://www.linkedin.com/jobs/view/staff-ai-ux-product-designer-at-legalzoom-4446281244",
+      "apply": false,
+      "reason": "Staff title: Staff AI UX Product Designer"
+    },
+    {
+      "jobId": "4446773376",
+      "title": "Senior Product Designer",
+      "company": "Shields Group Search",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-shields-group-search-4446773376",
+      "apply": false,
+      "reason": "JD minimum years 8"
+    },
+    {
+      "jobId": "4457485962",
+      "title": "UX Designer III",
+      "company": "ServiceNow",
+      "url": "https://www.linkedin.com/jobs/view/ux-designer-iii-at-servicenow-4457485962",
+      "apply": false,
+      "reason": "physical / industrial designer"
+    },
+    {
+      "jobId": "4457644349",
+      "title": "Product designer",
+      "company": "Jobright.ai",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-at-jobright-ai-4457644349",
+      "apply": false,
+      "reason": "recruiter marketplace / aggregator: Jobright.ai"
+    },
+    {
+      "jobId": "4449160600",
+      "title": "Principal Product Designer",
+      "company": "Prolaio",
+      "url": "https://www.linkedin.com/jobs/view/principal-product-designer-at-prolaio-4449160600",
+      "apply": false,
+      "reason": "Principal title: Principal Product Designer"
+    },
+    {
+      "jobId": "4458749685",
+      "title": "Staff Product Designer, Monetization",
+      "company": "Duolingo",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-monetization-at-duolingo-4458749685",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Monetization"
+    },
+    {
+      "jobId": "4457661173",
+      "title": "Senior Product Designer",
+      "company": "Abby Care",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-abby-care-4457661173",
+      "apply": false,
+      "reason": "JD minimum years 5+"
+    },
+    {
+      "jobId": "4448833625",
+      "title": "Experience Design Senior Alternative Investments -Associate",
+      "company": "JPMorganChase",
+      "url": "https://www.linkedin.com/jobs/view/experience-design-senior-alternative-investments-associate-at-jpmorganchase-4448833625",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Experience Design Senior Alternative Investments -Associate"
+    },
+    {
+      "jobId": "4455745010",
+      "title": "Product Designer",
+      "company": "Underdog.io -Apply to top tech jobs in 60 seconds. A place where companies apply to you",
+      "url": "https://www.linkedin.com/jobs/view/product-designer-at-underdog-io-apply-to-top-tech-jobs-in-60-seconds-a-place-where-companies-apply-to-you-4455745010",
+      "apply": false,
+      "reason": "recruiter marketplace / aggregator: Underdog.io -Apply to top tech jobs in 60 seconds. A place where companies apply to you"
+    },
+    {
+      "jobId": "4448278757",
+      "title": "Interaction Designer, Support Platform",
+      "company": "Google",
+      "url": "https://www.linkedin.com/jobs/view/interaction-designer-support-platform-at-google-4448278757",
+      "apply": false,
+      "reason": "Zack: do not apply to Google"
+    },
+    {
+      "jobId": "4459040667",
+      "title": "Senior Product Designer",
+      "company": "Aspiron Search",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-aspiron-search-4459040667",
+      "apply": false,
+      "reason": "JD minimum years 5+"
+    },
+    {
+      "jobId": "4457681817",
+      "title": "Senior Designer",
+      "company": "Tata Consultancy Services",
+      "url": "https://www.linkedin.com/jobs/view/senior-designer-at-tata-consultancy-services-4457681817",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Designer"
+    },
+    {
+      "jobId": "4459007814",
+      "title": "UX Design Lead",
+      "company": "LMI",
+      "url": "https://www.linkedin.com/jobs/view/ux-design-lead-at-lmi-4459007814",
+      "apply": false,
+      "reason": "JD minimum years 7+"
+    },
+    {
+      "jobId": "4459133131",
+      "title": "Senior Interaction Designer",
+      "company": "Intuitive",
+      "url": "https://www.linkedin.com/jobs/view/senior-interaction-designer-at-intuitive-4459133131",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Interaction Designer"
+    },
+    {
+      "jobId": "4459090950",
+      "title": "Lead AI Experience Designer",
+      "company": "Eliza",
+      "url": "https://www.linkedin.com/jobs/view/lead-ai-experience-designer-at-eliza-4459090950",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Lead AI Experience Designer"
+    },
+    {
+      "jobId": "4448241356",
+      "title": "Senior Digital Designer",
+      "company": "Harry's",
+      "url": "https://www.linkedin.com/jobs/view/senior-digital-designer-at-harry-s-4448241356",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Digital Designer"
+    },
+    {
+      "jobId": "4457613615",
+      "title": "Senior Product UX Designer",
+      "company": "Birdy Grey",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-ux-designer-at-birdy-grey-4457613615",
+      "apply": false,
+      "reason": "JD minimum years 6+"
+    },
+    {
+      "jobId": "4448355063",
+      "title": "Senior Associate, Experience Design",
+      "company": "New York Life",
+      "url": "https://www.linkedin.com/jobs/view/senior-associate-experience-design-at-new-york-life-4448355063",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Associate, Experience Design"
+    },
+    {
+      "jobId": "4457625786",
+      "title": "Web Developer ( UI/UX)",
+      "company": "ATASH ENTERPRISES LLC",
+      "url": "https://www.linkedin.com/jobs/view/web-developer-ui-ux-at-atash-enterprises-llc-4457625786",
+      "apply": false,
+      "reason": "JD minimum years 8"
+    },
+    {
+      "jobId": "4457446976",
+      "title": "Frontend Developer",
+      "company": "Haystack",
+      "url": "https://www.linkedin.com/jobs/view/frontend-developer-at-haystack-4457446976",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Frontend Developer"
+    },
+    {
+      "jobId": "4448253129",
+      "title": "Senior Digital Designer",
+      "company": "Mammoth Brands",
+      "url": "https://www.linkedin.com/jobs/view/senior-digital-designer-at-mammoth-brands-4448253129",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Senior Digital Designer"
+    },
+    {
+      "jobId": "4457476927",
+      "title": "Senior Product Designer (IOS)",
+      "company": "Insight Global",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-ios-at-insight-global-4457476927",
+      "apply": false,
+      "reason": "JD minimum years 8+"
+    },
+    {
+      "jobId": "4459041687",
+      "title": "Experience Design, Vice President",
+      "company": "JPMorganChase",
+      "url": "https://www.linkedin.com/jobs/view/experience-design-vice-president-at-jpmorganchase-4459041687",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Experience Design, Vice President"
+    },
+    {
+      "jobId": "4457491720",
+      "title": "UI/UX Programmer",
+      "company": "Chasepro",
+      "url": "https://www.linkedin.com/jobs/view/ui-ux-programmer-at-chasepro-4457491720",
+      "apply": false,
+      "reason": "JD minimum years 8"
+    },
+    {
+      "jobId": "4456525426",
+      "title": "Product Development Manager",
+      "company": "UFP Industries",
+      "url": "https://www.linkedin.com/jobs/view/product-development-manager-at-ufp-industries-4456525426",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Development Manager"
+    },
+    {
+      "jobId": "4459035377",
+      "title": "xPL Designer",
+      "company": "Turner Construction Company",
+      "url": "https://www.linkedin.com/jobs/view/xpl-designer-at-turner-construction-company-4459035377",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: xPL Designer"
+    },
+    {
+      "jobId": "4459031458",
+      "title": "xPL Designer",
+      "company": "Turner Construction Company",
+      "url": "https://www.linkedin.com/jobs/view/xpl-designer-at-turner-construction-company-4459031458",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: xPL Designer"
+    },
+    {
+      "jobId": "4457674054",
+      "title": "Product Design Engineer",
+      "company": "Actalent",
+      "url": "https://www.linkedin.com/jobs/view/product-design-engineer-at-actalent-4457674054",
+      "apply": false,
+      "reason": "physical / industrial designer"
+    },
+    {
+      "jobId": "4459005889",
+      "title": "Experience Design Lead",
+      "company": "Salesforce",
+      "url": "https://www.linkedin.com/jobs/view/experience-design-lead-at-salesforce-4459005889",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Experience Design Lead"
+    },
+    {
+      "jobId": "4459019425",
+      "title": "CAD Designer II",
+      "company": "Boston Whaler",
+      "url": "https://www.linkedin.com/jobs/view/cad-designer-ii-at-boston-whaler-4459019425",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: CAD Designer II"
+    },
+    {
+      "jobId": "4446279177",
+      "title": "Tool Designer",
+      "company": "Graco",
+      "url": "https://www.linkedin.com/jobs/view/tool-designer-at-graco-4446279177",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Tool Designer"
+    },
+    {
+      "jobId": "4458763059",
+      "title": "Associate Designer, Footwear",
+      "company": "TORY BURCH",
+      "url": "https://www.linkedin.com/jobs/view/associate-designer-footwear-at-tory-burch-4458763059",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Associate Designer, Footwear"
+    },
+    {
+      "jobId": "4456927379",
+      "title": "Physical Modeler",
+      "company": "Ford Design",
+      "url": "https://www.linkedin.com/jobs/view/physical-modeler-at-ford-design-4456927379",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Physical Modeler"
+    },
+    {
+      "jobId": "4459038624",
+      "title": "Conversational Designer",
+      "company": "ClifyX",
+      "url": "https://www.linkedin.com/jobs/view/conversational-designer-at-clifyx-4459038624",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Conversational Designer"
+    },
+    {
+      "jobId": "4448234933",
+      "title": "Product Intern",
+      "company": "StudyFetch",
+      "url": "https://www.linkedin.com/jobs/view/product-intern-at-studyfetch-4448234933",
+      "apply": false,
+      "reason": "not product designer / product engineer / UX: Product Intern"
+    },
+    {
+      "jobId": "4458776759",
+      "title": "Product Engineer",
+      "company": "Gathr Outdoors",
+      "url": "https://www.linkedin.com/jobs/view/product-engineer-at-gathr-outdoors-4458776759",
+      "apply": false,
+      "reason": "physical product engineer, not UX: Product Engineer"
+    },
+    {
+      "jobId": "4440084720",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440084720",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Agentic Experiences"
+    },
+    {
+      "jobId": "4457674086",
+      "title": "Staff Product Designer, Dasher Growth",
+      "company": "DoorDash",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-dasher-growth-at-doordash-4457674086",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Dasher Growth"
+    },
+    {
+      "jobId": "4457666692",
+      "title": "Staff Product Designer, Dasher Growth",
+      "company": "DoorDash",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-dasher-growth-at-doordash-4457666692",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Dasher Growth"
+    },
+    {
+      "jobId": "4440079835",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440079835",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Agentic Experiences"
+    },
+    {
+      "jobId": "4440085688",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440085688",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Agentic Experiences"
+    },
+    {
+      "jobId": "4440096343",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440096343",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Agentic Experiences"
+    },
+    {
+      "jobId": "4440084710",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440084710",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Agentic Experiences"
+    },
+    {
+      "jobId": "4457601326",
+      "title": "Sr. Staff Product Designer",
+      "company": "Achieve",
+      "url": "https://www.linkedin.com/jobs/view/sr-staff-product-designer-at-achieve-4457601326",
+      "apply": false,
+      "reason": "Staff title: Sr. Staff Product Designer"
+    },
+    {
+      "jobId": "4440078775",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440078775",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Agentic Experiences"
+    },
+    {
+      "jobId": "4440081751",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440081751",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Agentic Experiences"
+    },
+    {
+      "jobId": "4440083725",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440083725",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Agentic Experiences"
+    },
+    {
+      "jobId": "4457497373",
+      "title": "Sr. Staff Product Designer",
+      "company": "Achieve",
+      "url": "https://www.linkedin.com/jobs/view/sr-staff-product-designer-at-achieve-4457497373",
+      "apply": false,
+      "reason": "Staff title: Sr. Staff Product Designer"
+    },
+    {
+      "jobId": "4440087535",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440087535",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Agentic Experiences"
+    },
+    {
+      "jobId": "4440091481",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440091481",
+      "apply": false,
+      "reason": "Staff title: Staff Product Designer, Agentic Experiences"
+    }
+  ],
+  "reposted": [
+    {
+      "jobId": "4439775244",
+      "title": "Senior Product Designer",
+      "company": "Abridge",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-abridge-4439775244",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4430108467",
+      "title": "Senior Product Designer, Marketplace Global App",
+      "company": "Live Nation Entertainment",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-marketplace-global-app-at-live-nation-entertainment-4430108467",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4421673049",
+      "title": "Staff Product Designer, Editorial Platforms",
+      "company": "Warner Bros. Discovery",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-editorial-platforms-at-warner-bros-discovery-4421673049",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4421667092",
+      "title": "Staff Product Designer, Editorial Platforms",
+      "company": "Warner Bros. Discovery",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-editorial-platforms-at-warner-bros-discovery-4421667092",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4381159977",
+      "title": "Staff Product Designer, Newsroom",
+      "company": "CNN",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-newsroom-at-cnn-4381159977",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4430592128",
+      "title": "Senior Staff Product Designer, Care Delivery",
+      "company": "Maven Clinic",
+      "url": "https://www.linkedin.com/jobs/view/senior-staff-product-designer-care-delivery-at-maven-clinic-4430592128",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4414335203",
+      "title": "Product Design Lead (Strategy & UI Design)",
+      "company": "Horizontal Talent",
+      "url": "https://www.linkedin.com/jobs/view/product-design-lead-strategy-ui-design-at-horizontal-talent-4414335203",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4437639285",
+      "title": "Senior Product Designer",
+      "company": "Render",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-render-4437639285",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4355362086",
+      "title": "Staff Designer, Women's Health",
+      "company": "\u014cURA",
+      "url": "https://www.linkedin.com/jobs/view/staff-designer-women-s-health-at-%C5%8Dura-4355362086",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4403835552",
+      "title": "Sr UX Designer",
+      "company": "Petco",
+      "url": "https://www.linkedin.com/jobs/view/sr-ux-designer-at-petco-4403835552",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4422161292",
+      "title": "Product Design Lead, Data Cloud",
+      "company": "Rippling",
+      "url": "https://www.linkedin.com/jobs/view/product-design-lead-data-cloud-at-rippling-4422161292",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4439835327",
+      "title": "Senior Product Designer",
+      "company": "Crossing Hurdles",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-at-crossing-hurdles-4439835327",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4324574891",
+      "title": "Senior Product Designer \u2013 Games",
+      "company": "Moose Toys",
+      "url": "https://www.linkedin.com/jobs/view/senior-product-designer-%E2%80%93-games-at-moose-toys-4324574891",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4412539520",
+      "title": "CX/UX Designer (Tax & Accounting) - Hybrid (TX/KS/NJ/FL/GA/NY/IL) R0056839",
+      "company": "Wolters Kluwer",
+      "url": "https://www.linkedin.com/jobs/view/cx-ux-designer-tax-accounting-hybrid-tx-ks-nj-fl-ga-ny-il-r0056839-at-wolters-kluwer-4412539520",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4419563306",
+      "title": "Industrial Designer 1",
+      "company": "Garmin",
+      "url": "https://www.linkedin.com/jobs/view/industrial-designer-1-at-garmin-4419563306",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4371529879",
+      "title": "Senior or Staff Design Engineer, Design Systems",
+      "company": "Harvey",
+      "url": "https://www.linkedin.com/jobs/view/senior-or-staff-design-engineer-design-systems-at-harvey-4371529879",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4440051619",
+      "title": "R&D Product Development Engineer",
+      "company": "Vertiv",
+      "url": "https://www.linkedin.com/jobs/view/r-d-product-development-engineer-at-vertiv-4440051619",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4407224802",
+      "title": "Assistant Designer",
+      "company": "A\u00e9ropostale",
+      "url": "https://www.linkedin.com/jobs/view/assistant-designer-at-a%C3%A9ropostale-4407224802",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4439373404",
+      "title": "CAD Specialist",
+      "company": "Gratz Pilates",
+      "url": "https://www.linkedin.com/jobs/view/cad-specialist-at-gratz-pilates-4439373404",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4391771024",
+      "title": "Technical Designer, Men's",
+      "company": "Vince",
+      "url": "https://www.linkedin.com/jobs/view/technical-designer-men-s-at-vince-4391771024",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4419984205",
+      "title": "Director of Product Design",
+      "company": "LeanData",
+      "url": "https://www.linkedin.com/jobs/view/director-of-product-design-at-leandata-4419984205",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4421664117",
+      "title": "Staff Product Designer, Editorial Platforms",
+      "company": "Warner Bros. Discovery",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-editorial-platforms-at-warner-bros-discovery-4421664117",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    },
+    {
+      "jobId": "4440076936",
+      "title": "Staff Product Designer, Agentic Experiences",
+      "company": "Affirm",
+      "url": "https://www.linkedin.com/jobs/view/staff-product-designer-agentic-experiences-at-affirm-4440076936",
+      "apply": false,
+      "reason": "repost heuristic (id<4440078775)"
+    }
+  ]
+}
